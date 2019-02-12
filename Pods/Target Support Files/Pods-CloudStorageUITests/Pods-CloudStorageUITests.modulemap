@@ -1,0 +1,6 @@
+framework module Pods_CloudStorageUITests {
+  umbrella header "Pods-CloudStorageUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

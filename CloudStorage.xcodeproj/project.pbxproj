@@ -1,0 +1,750 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000D57072213184800258699 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000D57062213184800258699 /* ViewController2.swift */; };
+		00FFC158221301F000D1D6D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FFC157221301F000D1D6D7 /* AppDelegate.swift */; };
+		00FFC15A221301F000D1D6D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FFC159221301F000D1D6D7 /* ViewController.swift */; };
+		00FFC15D221301F000D1D6D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FFC15B221301F000D1D6D7 /* Main.storyboard */; };
+		00FFC15F221301F300D1D6D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00FFC15E221301F300D1D6D7 /* Assets.xcassets */; };
+		00FFC162221301F300D1D6D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FFC160221301F300D1D6D7 /* LaunchScreen.storyboard */; };
+		00FFC16D221301F300D1D6D7 /* CloudStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FFC16C221301F300D1D6D7 /* CloudStorageTests.swift */; };
+		00FFC178221301F300D1D6D7 /* CloudStorageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FFC177221301F300D1D6D7 /* CloudStorageUITests.swift */; };
+		00FFC1862213029700D1D6D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00FFC1852213029700D1D6D7 /* GoogleService-Info.plist */; };
+		00FFC1872213029700D1D6D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00FFC1852213029700D1D6D7 /* GoogleService-Info.plist */; };
+		00FFC1882213029700D1D6D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00FFC1852213029700D1D6D7 /* GoogleService-Info.plist */; };
+		775290B1E4E5BB3EC28B20FE /* Pods_CloudStorageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF0675FF7C1D8349B0DF5BF /* Pods_CloudStorageTests.framework */; };
+		90A2F4DBCF635EA4B5D8DFE3 /* Pods_CloudStorageUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8D138B987D8DBF4CD39446 /* Pods_CloudStorageUITests.framework */; };
+		C5E872EF203176D854AB9D45 /* Pods_CloudStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA6189601D9A882F309E96F /* Pods_CloudStorage.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00FFC169221301F300D1D6D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00FFC14C221301F000D1D6D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00FFC153221301F000D1D6D7;
+			remoteInfo = CloudStorage;
+		};
+		00FFC174221301F300D1D6D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00FFC14C221301F000D1D6D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00FFC153221301F000D1D6D7;
+			remoteInfo = CloudStorage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000D57062213184800258699 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		00FFC154221301F000D1D6D7 /* CloudStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00FFC157221301F000D1D6D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00FFC159221301F000D1D6D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		00FFC15C221301F000D1D6D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00FFC15E221301F300D1D6D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00FFC161221301F300D1D6D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00FFC163221301F300D1D6D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00FFC168221301F300D1D6D7 /* CloudStorageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudStorageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00FFC16C221301F300D1D6D7 /* CloudStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudStorageTests.swift; sourceTree = "<group>"; };
+		00FFC16E221301F300D1D6D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00FFC173221301F300D1D6D7 /* CloudStorageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudStorageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00FFC177221301F300D1D6D7 /* CloudStorageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudStorageUITests.swift; sourceTree = "<group>"; };
+		00FFC179221301F300D1D6D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00FFC1852213029700D1D6D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0A348EA9711DA7028910922E /* Pods-CloudStorage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudStorage.debug.xcconfig"; path = "Target Support Files/Pods-CloudStorage/Pods-CloudStorage.debug.xcconfig"; sourceTree = "<group>"; };
+		2D64CFAC596E8ECD729C9F24 /* Pods-CloudStorageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudStorageUITests.debug.xcconfig"; path = "Target Support Files/Pods-CloudStorageUITests/Pods-CloudStorageUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3467F520447BA850D610A711 /* Pods-CloudStorage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudStorage.release.xcconfig"; path = "Target Support Files/Pods-CloudStorage/Pods-CloudStorage.release.xcconfig"; sourceTree = "<group>"; };
+		7BF0675FF7C1D8349B0DF5BF /* Pods_CloudStorageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudStorageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98DCEDB810AB93D32C085233 /* Pods-CloudStorageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudStorageTests.release.xcconfig"; path = "Target Support Files/Pods-CloudStorageTests/Pods-CloudStorageTests.release.xcconfig"; sourceTree = "<group>"; };
+		AF8D138B987D8DBF4CD39446 /* Pods_CloudStorageUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudStorageUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFA6189601D9A882F309E96F /* Pods_CloudStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D13C01F4CF21FB30974803AD /* Pods-CloudStorageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudStorageTests.debug.xcconfig"; path = "Target Support Files/Pods-CloudStorageTests/Pods-CloudStorageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D9FCCF7628B60C983DE9A949 /* Pods-CloudStorageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudStorageUITests.release.xcconfig"; path = "Target Support Files/Pods-CloudStorageUITests/Pods-CloudStorageUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00FFC151221301F000D1D6D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5E872EF203176D854AB9D45 /* Pods_CloudStorage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00FFC165221301F300D1D6D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775290B1E4E5BB3EC28B20FE /* Pods_CloudStorageTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00FFC170221301F300D1D6D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90A2F4DBCF635EA4B5D8DFE3 /* Pods_CloudStorageUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00FFC14B221301F000D1D6D7 = {
+			isa = PBXGroup;
+			children = (
+				00FFC156221301F000D1D6D7 /* CloudStorage */,
+				00FFC16B221301F300D1D6D7 /* CloudStorageTests */,
+				00FFC176221301F300D1D6D7 /* CloudStorageUITests */,
+				00FFC155221301F000D1D6D7 /* Products */,
+				33626CCCB2F8ACBC5F23C8DE /* Pods */,
+				600561506BCA6A6BB7B3F5C6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		00FFC155221301F000D1D6D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00FFC154221301F000D1D6D7 /* CloudStorage.app */,
+				00FFC168221301F300D1D6D7 /* CloudStorageTests.xctest */,
+				00FFC173221301F300D1D6D7 /* CloudStorageUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00FFC156221301F000D1D6D7 /* CloudStorage */ = {
+			isa = PBXGroup;
+			children = (
+				00FFC157221301F000D1D6D7 /* AppDelegate.swift */,
+				00FFC159221301F000D1D6D7 /* ViewController.swift */,
+				000D57062213184800258699 /* ViewController2.swift */,
+				00FFC15B221301F000D1D6D7 /* Main.storyboard */,
+				00FFC15E221301F300D1D6D7 /* Assets.xcassets */,
+				00FFC160221301F300D1D6D7 /* LaunchScreen.storyboard */,
+				00FFC1852213029700D1D6D7 /* GoogleService-Info.plist */,
+				00FFC163221301F300D1D6D7 /* Info.plist */,
+			);
+			path = CloudStorage;
+			sourceTree = "<group>";
+		};
+		00FFC16B221301F300D1D6D7 /* CloudStorageTests */ = {
+			isa = PBXGroup;
+			children = (
+				00FFC16C221301F300D1D6D7 /* CloudStorageTests.swift */,
+				00FFC16E221301F300D1D6D7 /* Info.plist */,
+			);
+			path = CloudStorageTests;
+			sourceTree = "<group>";
+		};
+		00FFC176221301F300D1D6D7 /* CloudStorageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00FFC177221301F300D1D6D7 /* CloudStorageUITests.swift */,
+				00FFC179221301F300D1D6D7 /* Info.plist */,
+			);
+			path = CloudStorageUITests;
+			sourceTree = "<group>";
+		};
+		33626CCCB2F8ACBC5F23C8DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A348EA9711DA7028910922E /* Pods-CloudStorage.debug.xcconfig */,
+				3467F520447BA850D610A711 /* Pods-CloudStorage.release.xcconfig */,
+				D13C01F4CF21FB30974803AD /* Pods-CloudStorageTests.debug.xcconfig */,
+				98DCEDB810AB93D32C085233 /* Pods-CloudStorageTests.release.xcconfig */,
+				2D64CFAC596E8ECD729C9F24 /* Pods-CloudStorageUITests.debug.xcconfig */,
+				D9FCCF7628B60C983DE9A949 /* Pods-CloudStorageUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		600561506BCA6A6BB7B3F5C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFA6189601D9A882F309E96F /* Pods_CloudStorage.framework */,
+				7BF0675FF7C1D8349B0DF5BF /* Pods_CloudStorageTests.framework */,
+				AF8D138B987D8DBF4CD39446 /* Pods_CloudStorageUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00FFC153221301F000D1D6D7 /* CloudStorage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00FFC17C221301F300D1D6D7 /* Build configuration list for PBXNativeTarget "CloudStorage" */;
+			buildPhases = (
+				1055CDFA8488CA2BC2504B12 /* [CP] Check Pods Manifest.lock */,
+				00FFC150221301F000D1D6D7 /* Sources */,
+				00FFC151221301F000D1D6D7 /* Frameworks */,
+				00FFC152221301F000D1D6D7 /* Resources */,
+				3B2A138CA162A2090521B5CC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloudStorage;
+			productName = CloudStorage;
+			productReference = 00FFC154221301F000D1D6D7 /* CloudStorage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00FFC167221301F300D1D6D7 /* CloudStorageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00FFC17F221301F300D1D6D7 /* Build configuration list for PBXNativeTarget "CloudStorageTests" */;
+			buildPhases = (
+				1429152C8B57B460BDB3EEC8 /* [CP] Check Pods Manifest.lock */,
+				00FFC164221301F300D1D6D7 /* Sources */,
+				00FFC165221301F300D1D6D7 /* Frameworks */,
+				00FFC166221301F300D1D6D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00FFC16A221301F300D1D6D7 /* PBXTargetDependency */,
+			);
+			name = CloudStorageTests;
+			productName = CloudStorageTests;
+			productReference = 00FFC168221301F300D1D6D7 /* CloudStorageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00FFC172221301F300D1D6D7 /* CloudStorageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00FFC182221301F300D1D6D7 /* Build configuration list for PBXNativeTarget "CloudStorageUITests" */;
+			buildPhases = (
+				8BA37C7763AD67E1A62D6401 /* [CP] Check Pods Manifest.lock */,
+				00FFC16F221301F300D1D6D7 /* Sources */,
+				00FFC170221301F300D1D6D7 /* Frameworks */,
+				00FFC171221301F300D1D6D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00FFC175221301F300D1D6D7 /* PBXTargetDependency */,
+			);
+			name = CloudStorageUITests;
+			productName = CloudStorageUITests;
+			productReference = 00FFC173221301F300D1D6D7 /* CloudStorageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00FFC14C221301F000D1D6D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Lado;
+				TargetAttributes = {
+					00FFC153221301F000D1D6D7 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					00FFC167221301F300D1D6D7 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 00FFC153221301F000D1D6D7;
+					};
+					00FFC172221301F300D1D6D7 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 00FFC153221301F000D1D6D7;
+					};
+				};
+			};
+			buildConfigurationList = 00FFC14F221301F000D1D6D7 /* Build configuration list for PBXProject "CloudStorage" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00FFC14B221301F000D1D6D7;
+			productRefGroup = 00FFC155221301F000D1D6D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00FFC153221301F000D1D6D7 /* CloudStorage */,
+				00FFC167221301F300D1D6D7 /* CloudStorageTests */,
+				00FFC172221301F300D1D6D7 /* CloudStorageUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00FFC152221301F000D1D6D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FFC162221301F300D1D6D7 /* LaunchScreen.storyboard in Resources */,
+				00FFC1862213029700D1D6D7 /* GoogleService-Info.plist in Resources */,
+				00FFC15F221301F300D1D6D7 /* Assets.xcassets in Resources */,
+				00FFC15D221301F000D1D6D7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00FFC166221301F300D1D6D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FFC1872213029700D1D6D7 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00FFC171221301F300D1D6D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FFC1882213029700D1D6D7 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1055CDFA8488CA2BC2504B12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CloudStorage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1429152C8B57B460BDB3EEC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CloudStorageTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B2A138CA162A2090521B5CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CloudStorage/Pods-CloudStorage-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CloudStorage/Pods-CloudStorage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BA37C7763AD67E1A62D6401 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CloudStorageUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00FFC150221301F000D1D6D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FFC15A221301F000D1D6D7 /* ViewController.swift in Sources */,
+				00FFC158221301F000D1D6D7 /* AppDelegate.swift in Sources */,
+				000D57072213184800258699 /* ViewController2.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00FFC164221301F300D1D6D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FFC16D221301F300D1D6D7 /* CloudStorageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00FFC16F221301F300D1D6D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FFC178221301F300D1D6D7 /* CloudStorageUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00FFC16A221301F300D1D6D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00FFC153221301F000D1D6D7 /* CloudStorage */;
+			targetProxy = 00FFC169221301F300D1D6D7 /* PBXContainerItemProxy */;
+		};
+		00FFC175221301F300D1D6D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00FFC153221301F000D1D6D7 /* CloudStorage */;
+			targetProxy = 00FFC174221301F300D1D6D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00FFC15B221301F000D1D6D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00FFC15C221301F000D1D6D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00FFC160221301F300D1D6D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00FFC161221301F300D1D6D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00FFC17A221301F300D1D6D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00FFC17B221301F300D1D6D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00FFC17D221301F300D1D6D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A348EA9711DA7028910922E /* Pods-CloudStorage.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5G36Y3GU6A;
+				INFOPLIST_FILE = CloudStorage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Lado.CloudStorage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00FFC17E221301F300D1D6D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3467F520447BA850D610A711 /* Pods-CloudStorage.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5G36Y3GU6A;
+				INFOPLIST_FILE = CloudStorage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Lado.CloudStorage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		00FFC180221301F300D1D6D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D13C01F4CF21FB30974803AD /* Pods-CloudStorageTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5G36Y3GU6A;
+				INFOPLIST_FILE = CloudStorageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Lado.CloudStorageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudStorage.app/CloudStorage";
+			};
+			name = Debug;
+		};
+		00FFC181221301F300D1D6D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98DCEDB810AB93D32C085233 /* Pods-CloudStorageTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5G36Y3GU6A;
+				INFOPLIST_FILE = CloudStorageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Lado.CloudStorageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudStorage.app/CloudStorage";
+			};
+			name = Release;
+		};
+		00FFC183221301F300D1D6D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D64CFAC596E8ECD729C9F24 /* Pods-CloudStorageUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5G36Y3GU6A;
+				INFOPLIST_FILE = CloudStorageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Lado.CloudStorageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CloudStorage;
+			};
+			name = Debug;
+		};
+		00FFC184221301F300D1D6D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9FCCF7628B60C983DE9A949 /* Pods-CloudStorageUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5G36Y3GU6A;
+				INFOPLIST_FILE = CloudStorageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Lado.CloudStorageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CloudStorage;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00FFC14F221301F000D1D6D7 /* Build configuration list for PBXProject "CloudStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00FFC17A221301F300D1D6D7 /* Debug */,
+				00FFC17B221301F300D1D6D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00FFC17C221301F300D1D6D7 /* Build configuration list for PBXNativeTarget "CloudStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00FFC17D221301F300D1D6D7 /* Debug */,
+				00FFC17E221301F300D1D6D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00FFC17F221301F300D1D6D7 /* Build configuration list for PBXNativeTarget "CloudStorageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00FFC180221301F300D1D6D7 /* Debug */,
+				00FFC181221301F300D1D6D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00FFC182221301F300D1D6D7 /* Build configuration list for PBXNativeTarget "CloudStorageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00FFC183221301F300D1D6D7 /* Debug */,
+				00FFC184221301F300D1D6D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00FFC14C221301F000D1D6D7 /* Project object */;
+}
