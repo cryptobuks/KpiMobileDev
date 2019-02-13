@@ -11,6 +11,10 @@ import FirebaseAuth
 
 class ViewController2: UIViewController {
 
+    @IBOutlet weak var email: UILabel!
+    
+    @IBOutlet weak var info: UILabel!
+    
     @IBAction func action(_ sender: UIButton) {
         try! Auth.auth().signOut()
         performSegue(withIdentifier: "logout", sender: self)
@@ -19,7 +23,19 @@ class ViewController2: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        email.text = Auth.auth().currentUser?.email
+        let date = Auth.auth().currentUser?.metadata.creationDate
+        info.text = date?.description
         print(Auth.auth().currentUser?.email)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
+    override open var shouldAutorotate: Bool {
+        return false
     }
     
 

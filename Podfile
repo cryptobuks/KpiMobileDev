@@ -10,6 +10,7 @@ target 'CloudStorage' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
+  pod 'OnboardKit'
 
   target 'CloudStorageTests' do
     inherit! :search_paths

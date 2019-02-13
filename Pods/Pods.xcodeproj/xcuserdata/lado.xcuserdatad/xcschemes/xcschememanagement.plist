@@ -81,26 +81,33 @@
 			<key>orderHint</key>
 			<integer>9</integer>
 		</dict>
-		<key>Pods-CloudStorage.xcscheme</key>
+		<key>OnboardKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>13</integer>
 		</dict>
-		<key>Pods-CloudStorageTests.xcscheme</key>
+		<key>Pods-CloudStorage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>14</integer>
 		</dict>
-		<key>Pods-CloudStorageUITests.xcscheme</key>
+		<key>Pods-CloudStorageTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>15</integer>
+		</dict>
+		<key>Pods-CloudStorageUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>16</integer>
 		</dict>
 		<key>leveldb-library.xcscheme</key>
 		<dict>

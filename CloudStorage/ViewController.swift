@@ -28,8 +28,14 @@ class ViewController: UIViewController {
                         self.performSegue(withIdentifier: "goHome", sender: self)
                     } else {
                         if let myError = error?.localizedDescription {
+                            let alertController = UIAlertController(title: "Error", message: myError, preferredStyle: UIAlertController.Style.alert)
+                            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                            self.present(alertController, animated: true, completion: nil)
                             print(myError)
                         } else {
+                            let alertController = UIAlertController(title: "Error", message: "Error!", preferredStyle: UIAlertController.Style.alert)
+                            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                            self.present(alertController, animated: true, completion: nil)
                             print("Error!")
                         }
                     }
@@ -40,8 +46,14 @@ class ViewController: UIViewController {
                         self.performSegue(withIdentifier: "goHome", sender: self)
                     } else {
                         if let myError = error?.localizedDescription {
+                            let alertController = UIAlertController(title: "Error", message: myError, preferredStyle: UIAlertController.Style.alert)
+                            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                            self.present(alertController, animated: true, completion: nil)
                             print(myError)
                         } else {
+                            let alertController = UIAlertController(title: "Error", message: "Error!", preferredStyle: UIAlertController.Style.alert)
+                            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                            self.present(alertController, animated: true, completion: nil)
                             print("Error!")
                         }
                     }
@@ -54,7 +66,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
     
+    override open var shouldAutorotate: Bool {
+        return false
+    }
     
 }
 
