@@ -147,11 +147,21 @@
                                     <action selector="scanAction:" destination="1bm-ep-eN3" eventType="touchUpInside" id="xE4-5z-XYr"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBl-hq-c1T">
+                                <rect key="frame" x="16" y="57" width="343" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7HX-c9-ZoH"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Recive" image="receive" id="PCI-L4-ART"/>
+                    <connections>
+                        <outlet property="showResult" destination="FBl-hq-c1T" id="ymC-nu-95b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Z8-XM-I6b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

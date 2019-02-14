@@ -12,6 +12,10 @@ import QRCodeReader
 
 class QRScannerViewController: UIViewController, QRCodeReaderViewControllerDelegate {
     
+    @IBOutlet weak var showResult: UILabel!
+    
+    //create the reader lazily to avoid cpu overload during the
+    // initialization and each time we need to scan a QRCode
     lazy var readerVC: QRCodeReaderViewController = {
         let builder = QRCodeReaderViewControllerBuilder {
             $0.reader = QRCodeReader(metadataObjectTypes: [.qr], captureDevicePosition: .back)
@@ -36,11 +40,10 @@ class QRScannerViewController: UIViewController, QRCodeReaderViewControllerDeleg
         // Or by using the closure pattern
         readerVC.completionBlock = { (result: QRCodeReaderResult?) in
             print(result)
-            let alertController = UIAlertController(title: "Scanned", message: "String(describing: result)", preferredStyle: UIAlertController.Style.alert)
-            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-            self.present(alertController, animated: true, completion: nil)
+            
+            self.showResult.text = result?.value
         }
-        
+
         // Presents the readerVC as modal form sheet
         readerVC.modalPresentationStyle = .formSheet
         
