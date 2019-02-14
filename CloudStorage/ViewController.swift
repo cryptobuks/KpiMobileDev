@@ -26,34 +26,53 @@ class ViewController: UIViewController, UITextFieldDelegate{
     
     @IBAction func action(_ sender: UIButton) {
         
-        if emailText.text != "" && Auth.auth().isSignIn(withEmailLink: emailText.text!) {
-            //touch id
-            let myContext = LAContext()
-            let myLocalizedReasonString = "Biometric Authntication testing !! "
-            
-            var authError: NSError?
-            if #available(iOS 8.0, macOS 10.12.1, *) {
-                if myContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &authError) {
-                    myContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: myLocalizedReasonString) { success, evaluateError in
+        if emailText.text != "" {
+            if segmentControl.selectedSegmentIndex == 0 {
+                
+                Auth.auth().fetchSignInMethods(forEmail: emailText.text!) { (signInMethods, error) in
+                    if let error = error {
+                        print("Error Error Error Error Error ",error)
+                    } else if let signInMethods = signInMethods?.contains(EmailLinkAuthSignInMethod) {
+                        print("BBBBBBBBB ", signInMethods)
+                    }
+                }
+                
+                Auth.auth().fetchProviders(forEmail: emailText.text!) { (providers, error) in
+                    if let error = error {
+                        print(error.localizedDescription)
+                    } else if let providers = providers {
+                        print("AAAAAAA ", providers)
                         
-                        DispatchQueue.main.async {
-                            if success {
-                                // User authenticated successfully, take appropriate action
-                                print("Awesome!!... User authenticated successfully")
-                                self.performSegue(withIdentifier: "goHome", sender: self)
+                        //touch id
+                        let myContext = LAContext()
+                        let myLocalizedReasonString = "Cloud Authntication"
+                        
+                        var authError: NSError?
+                        if #available(iOS 8.0, macOS 10.12.1, *) {
+                            if myContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &authError) {
+                                myContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: myLocalizedReasonString) { success, evaluateError in
+                                    
+                                    DispatchQueue.main.async {
+                                        if success {
+                                            // User authenticated successfully, take appropriate action
+                                            print("Awesome!!... User authenticated successfully")
+                                            self.performSegue(withIdentifier: "goHome", sender: self)
+                                        } else {
+                                            // User did not authenticate successfully, look at error and take appropriate action
+                                            print("Sorry!!... User did not authenticate successfully")
+                                        }
+                                    }
+                                }
                             } else {
-                                // User did not authenticate successfully, look at error and take appropriate action
-                                print("Sorry!!... User did not authenticate successfully")
+                                // Could not evaluate policy; look at authError and present an appropriate message to user
+                                print("Sorry!!.. Could not evaluate policy.")
                             }
+                        } else {
+                            // Fallback on earlier versions
+                            print("Ooops!!.. This feature is not supported.")
                         }
                     }
-                } else {
-                    // Could not evaluate policy; look at authError and present an appropriate message to user
-                    print("Sorry!!.. Could not evaluate policy.")
                 }
-            } else {
-                // Fallback on earlier versions
-                print("Ooops!!.. This feature is not supported.")
             }
         }
         
