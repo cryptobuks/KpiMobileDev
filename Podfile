@@ -11,6 +11,8 @@ target 'CloudStorage' do
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
   pod 'paper-onboarding'
+  pod 'QuickTableViewController'
+  pod 'QRCodeReader.swift', '~> 10.0.0'
 
   target 'CloudStorageTests' do
     inherit! :search_paths

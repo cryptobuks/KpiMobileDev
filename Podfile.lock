@@ -74,6 +74,8 @@ PODS:
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
   - paper-onboarding (5.0.0)
+  - QRCodeReader.swift (10.0.0)
+  - QuickTableViewController (1.1.0)
 
 DEPENDENCIES:
   - Firebase/Auth
@@ -81,6 +83,8 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Storage
   - paper-onboarding
+  - QRCodeReader.swift (~> 10.0.0)
+  - QuickTableViewController
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -98,6 +102,8 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - paper-onboarding
+    - QRCodeReader.swift
+    - QuickTableViewController
 
 SPEC CHECKSUMS:
   Firebase: 749a8ff4962f9d8c79dda1966de20f6f77583d67
@@ -114,7 +120,9 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   paper-onboarding: a2e3a710fd27ac0b5635ec5490660e7ec09289b5
+  QRCodeReader.swift: 74d0378eb0c7807828552b49626bbc8307495aee
+  QuickTableViewController: 129e71fc37a69991aff02bc946723d51a13d6aa5
 
-PODFILE CHECKSUM: a86a1aad856813e96843ef51cb5faa1679d6574c
+PODFILE CHECKSUM: 155bad0d2207232538804adc2fa252978db721c4
 
 COCOAPODS: 1.6.0

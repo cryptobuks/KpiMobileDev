@@ -10,20 +10,10 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
-    @IBOutlet weak var DarkMode: UISwitch!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
-    @IBAction func DarkModeAction(_ sender: Any) {
-        if DarkMode.isOn == true {
-            self.view.backgroundColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 1.0)
-            
-        } else {
-            self.view.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        }
     }
     
 
