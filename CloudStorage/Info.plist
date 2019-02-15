@@ -2,6 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconType</key>
+			<string>UIApplicationShortcutIconTypeShare</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Menu 1</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>Lado.CloudStorage.menu</string>
+		</dict>
+	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>Camera is need to scan QRCode</string>
 	<key>CFBundleDevelopmentRegion</key>

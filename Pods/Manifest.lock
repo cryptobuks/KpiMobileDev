@@ -76,6 +76,7 @@ PODS:
   - paper-onboarding (5.0.0)
   - QRCodeReader.swift (10.0.0)
   - QuickTableViewController (1.1.0)
+  - SkyFloatingLabelTextField (3.6.0)
 
 DEPENDENCIES:
   - Firebase/Auth
@@ -85,6 +86,7 @@ DEPENDENCIES:
   - paper-onboarding
   - QRCodeReader.swift (~> 10.0.0)
   - QuickTableViewController
+  - SkyFloatingLabelTextField (~> 3.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -104,6 +106,7 @@ SPEC REPOS:
     - paper-onboarding
     - QRCodeReader.swift
     - QuickTableViewController
+    - SkyFloatingLabelTextField
 
 SPEC CHECKSUMS:
   Firebase: 749a8ff4962f9d8c79dda1966de20f6f77583d67
@@ -122,7 +125,8 @@ SPEC CHECKSUMS:
   paper-onboarding: a2e3a710fd27ac0b5635ec5490660e7ec09289b5
   QRCodeReader.swift: 74d0378eb0c7807828552b49626bbc8307495aee
   QuickTableViewController: 129e71fc37a69991aff02bc946723d51a13d6aa5
+  SkyFloatingLabelTextField: 38164979b79512f9ff9288ad8acfc4bbf5d843e3
 
-PODFILE CHECKSUM: 155bad0d2207232538804adc2fa252978db721c4
+PODFILE CHECKSUM: be0ebb014638187754d56f2f5d7678a8d1a14dfd
 
 COCOAPODS: 1.6.0

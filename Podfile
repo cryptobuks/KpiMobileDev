@@ -13,6 +13,7 @@ target 'CloudStorage' do
   pod 'paper-onboarding'
   pod 'QuickTableViewController'
   pod 'QRCodeReader.swift', '~> 10.0.0'
+  pod 'SkyFloatingLabelTextField', '~> 3.0'
 
   target 'CloudStorageTests' do
     inherit! :search_paths

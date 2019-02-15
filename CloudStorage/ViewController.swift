@@ -9,12 +9,13 @@
 import UIKit
 import FirebaseAuth
 import LocalAuthentication
+import SkyFloatingLabelTextField
 
 class ViewController: UIViewController, UITextFieldDelegate{
 
-    @IBOutlet weak var emailText: UITextField!
+    @IBOutlet weak var emailText: SkyFloatingLabelTextField!
     
-    @IBOutlet weak var passText: UITextField!
+    @IBOutlet weak var passText: SkyFloatingLabelTextField!
     
     @IBOutlet weak var segmentControl: UISegmentedControl!
     
@@ -26,6 +27,17 @@ class ViewController: UIViewController, UITextFieldDelegate{
     
     @IBAction func action(_ sender: UIButton) {
         
+        //check email text
+        if((emailText.text?.characters.count)! < 3 || !(emailText.text?.contains("@"))!) {
+            emailText.errorMessage = "Invalid email"
+        }
+        
+        //check password
+        if((passText.text?.characters.count)! < 6) {
+            passText.errorMessage = "Invalid password"
+        }
+        
+        //auth by touch id
         if emailText.text != "" {
             if segmentControl.selectedSegmentIndex == 0 {
                 
@@ -76,6 +88,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
             }
         }
         
+        //Login & Sign Up
         if emailText.text != "" && passText.text != "" {
             if segmentControl.selectedSegmentIndex == 0 { //Login
                 Auth.auth().signIn(withEmail: emailText.text!, password: passText.text!, completion: { (user, error) in
@@ -135,11 +148,30 @@ class ViewController: UIViewController, UITextFieldDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //set placeholder for textfields
+        emailText.placeholder = "email"
+        passText.placeholder = "password"
+        
         self.emailText.delegate = self
         self.passText.delegate = self
         
         emailText.returnKeyType = UIReturnKeyType.next
         passText.returnKeyType = UIReturnKeyType.go
+        
+        //change segmentation control
+        segmentControl.backgroundColor = .clear
+        segmentControl.tintColor = .clear
+        
+        segmentControl.setTitleTextAttributes([
+            NSAttributedString.Key.font : UIFont(name: "DINCondensed-Bold", size: 22),
+            NSAttributedString.Key.foregroundColor: UIColor.lightGray
+            ], for: .normal)
+        
+        segmentControl.setTitleTextAttributes([
+            NSAttributedString.Key.font : UIFont(name: "DINCondensed-Bold", size: 22),
+            NSAttributedString.Key.foregroundColor: UIColor.orange
+            ], for: .selected)
     }
 
     override func viewWillAppear(_ animated: Bool) {

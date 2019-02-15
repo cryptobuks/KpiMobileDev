@@ -46,6 +46,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        //run everytime when user clicks on quick action item
+        if shortcutItem.type == "Lado.CloudStorage.menu" {
+            //something with menu
+            print("Goof!!!")
+        }
+    }
+    
 }
 
