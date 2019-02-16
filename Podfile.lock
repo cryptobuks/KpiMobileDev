@@ -1,4 +1,5 @@
 PODS:
+  - Eureka (4.3.1)
   - Firebase/Auth (5.16.0):
     - Firebase/CoreOnly
     - FirebaseAuth (= 5.3.0)
@@ -68,6 +69,7 @@ PODS:
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.2.1)
   - leveldb-library (1.20)
+  - lottie-ios (2.5.2)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
@@ -77,19 +79,24 @@ PODS:
   - QRCodeReader.swift (10.0.0)
   - QuickTableViewController (1.1.0)
   - SkyFloatingLabelTextField (3.6.0)
+  - SnapKit (4.2.0)
 
 DEPENDENCIES:
+  - Eureka
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
+  - lottie-ios
   - paper-onboarding
   - QRCodeReader.swift (~> 10.0.0)
   - QuickTableViewController
   - SkyFloatingLabelTextField (~> 3.0)
+  - SnapKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Eureka
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -102,13 +109,16 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMSessionFetcher
     - leveldb-library
+    - lottie-ios
     - nanopb
     - paper-onboarding
     - QRCodeReader.swift
     - QuickTableViewController
     - SkyFloatingLabelTextField
+    - SnapKit
 
 SPEC CHECKSUMS:
+  Eureka: 28ea296f06710f6745266b71f17862048941a32d
   Firebase: 749a8ff4962f9d8c79dda1966de20f6f77583d67
   FirebaseAnalytics: d35d47c03c50c73c14a7fd31463c5775843e78a9
   FirebaseAuth: c9b3ff063c223d2841d97240af547ce511bce19a
@@ -121,12 +131,14 @@ SPEC CHECKSUMS:
   GoogleUtilities: 111a012f4c3a29c9e7c954c082fafd6ee3c999c0
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   paper-onboarding: a2e3a710fd27ac0b5635ec5490660e7ec09289b5
   QRCodeReader.swift: 74d0378eb0c7807828552b49626bbc8307495aee
   QuickTableViewController: 129e71fc37a69991aff02bc946723d51a13d6aa5
   SkyFloatingLabelTextField: 38164979b79512f9ff9288ad8acfc4bbf5d843e3
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: be0ebb014638187754d56f2f5d7678a8d1a14dfd
+PODFILE CHECKSUM: 6586ec390690e16fd738522c34e5e42f86df1ce7
 
 COCOAPODS: 1.6.0

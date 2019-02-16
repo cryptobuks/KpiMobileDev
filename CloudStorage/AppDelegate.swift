@@ -21,6 +21,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         
+        // status parameter indicate user Online
+//        if Auth.auth().currentUser != nil {
+//            OnlineOfflineService.online(for: (Auth.auth().currentUser?.uid)!, status: true){ (success) in
+//
+//                print("User ==>", success)
+//
+//            }
+//        }
+        
         return true
     }
 
@@ -44,6 +53,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+//        if Auth.auth().currentUser != nil {
+//            OnlineOfflineService.online(for: (Auth.auth().currentUser?.uid)!, status: false){ (success) in
+//                
+//                print("User ==>", success)
+//            }
+//        }
     }
 
     func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {

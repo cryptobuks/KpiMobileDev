@@ -179,6 +179,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
         
     }
     
+    //rotation
     override open var shouldAutorotate: Bool {
         return false
     }
@@ -188,6 +189,5 @@ class ViewController: UIViewController, UITextFieldDelegate{
         self.view.endEditing(true)
         return false
     }
-    
 }
 
