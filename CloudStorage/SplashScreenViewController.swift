@@ -37,6 +37,11 @@ class SplashScreenViewController: UIViewController {
         self.performSegue(withIdentifier: "goLogin", sender: self)
     }
     
+    //rotation
+    override open var shouldAutorotate: Bool {
+        return false
+    }
+    
 
     /*
     // MARK: - Navigation

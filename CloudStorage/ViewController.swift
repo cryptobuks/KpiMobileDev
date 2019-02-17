@@ -131,6 +131,14 @@ class ViewController: UIViewController, UITextFieldDelegate{
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        //kepp a user log in, even if they close the app
+        if Auth.auth().currentUser != nil {
+            self.performSegue(withIdentifier: "goHome", sender: self)
+        }
+    }
+    
     var DarkOn = Bool()
     
     @IBAction func DarkAction(_ sender: Any) {
