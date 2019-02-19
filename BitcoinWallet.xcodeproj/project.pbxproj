@@ -54,17 +54,17 @@
 		006B631D221747040076C838 /* OnlineOfflineService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineOfflineService.swift; sourceTree = "<group>"; };
 		007006F822172C95008322E4 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		00F4C03A2215F9C9004EB6FD /* QRScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
-		00FFC154221301F000D1D6D7 /* CloudStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00FFC154221301F000D1D6D7 /* BitcoinWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00FFC157221301F000D1D6D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00FFC159221301F000D1D6D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		00FFC15C221301F000D1D6D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00FFC15E221301F300D1D6D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00FFC161221301F300D1D6D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00FFC163221301F300D1D6D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00FFC168221301F300D1D6D7 /* CloudStorageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudStorageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00FFC168221301F300D1D6D7 /* BitcoinWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitcoinWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00FFC16C221301F300D1D6D7 /* CloudStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudStorageTests.swift; sourceTree = "<group>"; };
 		00FFC16E221301F300D1D6D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00FFC173221301F300D1D6D7 /* CloudStorageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudStorageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00FFC173221301F300D1D6D7 /* BitcoinWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitcoinWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00FFC177221301F300D1D6D7 /* CloudStorageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudStorageUITests.swift; sourceTree = "<group>"; };
 		00FFC179221301F300D1D6D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00FFC1852213029700D1D6D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -110,9 +110,9 @@
 		00FFC14B221301F000D1D6D7 = {
 			isa = PBXGroup;
 			children = (
-				00FFC156221301F000D1D6D7 /* CloudStorage */,
-				00FFC16B221301F300D1D6D7 /* CloudStorageTests */,
-				00FFC176221301F300D1D6D7 /* CloudStorageUITests */,
+				00FFC156221301F000D1D6D7 /* BitcoinWallet */,
+				00FFC16B221301F300D1D6D7 /* BitcoinWalletTests */,
+				00FFC176221301F300D1D6D7 /* BitcoinWalletUITests */,
 				00FFC155221301F000D1D6D7 /* Products */,
 				33626CCCB2F8ACBC5F23C8DE /* Pods */,
 				600561506BCA6A6BB7B3F5C6 /* Frameworks */,
@@ -122,14 +122,14 @@
 		00FFC155221301F000D1D6D7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				00FFC154221301F000D1D6D7 /* CloudStorage.app */,
-				00FFC168221301F300D1D6D7 /* CloudStorageTests.xctest */,
-				00FFC173221301F300D1D6D7 /* CloudStorageUITests.xctest */,
+				00FFC154221301F000D1D6D7 /* BitcoinWallet.app */,
+				00FFC168221301F300D1D6D7 /* BitcoinWalletTests.xctest */,
+				00FFC173221301F300D1D6D7 /* BitcoinWalletUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		00FFC156221301F000D1D6D7 /* CloudStorage */ = {
+		00FFC156221301F000D1D6D7 /* BitcoinWallet */ = {
 			isa = PBXGroup;
 			children = (
 				0030F1CE221843440033A72A /* 4170-curves-lines.json */,
@@ -147,25 +147,25 @@
 				006B631D221747040076C838 /* OnlineOfflineService.swift */,
 				0030F1D02218443D0033A72A /* SplashScreenViewController.swift */,
 			);
-			path = CloudStorage;
+			path = BitcoinWallet;
 			sourceTree = "<group>";
 		};
-		00FFC16B221301F300D1D6D7 /* CloudStorageTests */ = {
+		00FFC16B221301F300D1D6D7 /* BitcoinWalletTests */ = {
 			isa = PBXGroup;
 			children = (
 				00FFC16C221301F300D1D6D7 /* CloudStorageTests.swift */,
 				00FFC16E221301F300D1D6D7 /* Info.plist */,
 			);
-			path = CloudStorageTests;
+			path = BitcoinWalletTests;
 			sourceTree = "<group>";
 		};
-		00FFC176221301F300D1D6D7 /* CloudStorageUITests */ = {
+		00FFC176221301F300D1D6D7 /* BitcoinWalletUITests */ = {
 			isa = PBXGroup;
 			children = (
 				00FFC177221301F300D1D6D7 /* CloudStorageUITests.swift */,
 				00FFC179221301F300D1D6D7 /* Info.plist */,
 			);
-			path = CloudStorageUITests;
+			path = BitcoinWalletUITests;
 			sourceTree = "<group>";
 		};
 		33626CCCB2F8ACBC5F23C8DE /* Pods */ = {
@@ -194,9 +194,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00FFC153221301F000D1D6D7 /* CloudStorage */ = {
+		00FFC153221301F000D1D6D7 /* BitcoinWallet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00FFC17C221301F300D1D6D7 /* Build configuration list for PBXNativeTarget "CloudStorage" */;
+			buildConfigurationList = 00FFC17C221301F300D1D6D7 /* Build configuration list for PBXNativeTarget "BitcoinWallet" */;
 			buildPhases = (
 				1055CDFA8488CA2BC2504B12 /* [CP] Check Pods Manifest.lock */,
 				00FFC150221301F000D1D6D7 /* Sources */,
@@ -208,14 +208,14 @@
 			);
 			dependencies = (
 			);
-			name = CloudStorage;
+			name = BitcoinWallet;
 			productName = CloudStorage;
-			productReference = 00FFC154221301F000D1D6D7 /* CloudStorage.app */;
+			productReference = 00FFC154221301F000D1D6D7 /* BitcoinWallet.app */;
 			productType = "com.apple.product-type.application";
 		};
-		00FFC167221301F300D1D6D7 /* CloudStorageTests */ = {
+		00FFC167221301F300D1D6D7 /* BitcoinWalletTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00FFC17F221301F300D1D6D7 /* Build configuration list for PBXNativeTarget "CloudStorageTests" */;
+			buildConfigurationList = 00FFC17F221301F300D1D6D7 /* Build configuration list for PBXNativeTarget "BitcoinWalletTests" */;
 			buildPhases = (
 				1429152C8B57B460BDB3EEC8 /* [CP] Check Pods Manifest.lock */,
 				00FFC164221301F300D1D6D7 /* Sources */,
@@ -227,14 +227,14 @@
 			dependencies = (
 				00FFC16A221301F300D1D6D7 /* PBXTargetDependency */,
 			);
-			name = CloudStorageTests;
+			name = BitcoinWalletTests;
 			productName = CloudStorageTests;
-			productReference = 00FFC168221301F300D1D6D7 /* CloudStorageTests.xctest */;
+			productReference = 00FFC168221301F300D1D6D7 /* BitcoinWalletTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		00FFC172221301F300D1D6D7 /* CloudStorageUITests */ = {
+		00FFC172221301F300D1D6D7 /* BitcoinWalletUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00FFC182221301F300D1D6D7 /* Build configuration list for PBXNativeTarget "CloudStorageUITests" */;
+			buildConfigurationList = 00FFC182221301F300D1D6D7 /* Build configuration list for PBXNativeTarget "BitcoinWalletUITests" */;
 			buildPhases = (
 				8BA37C7763AD67E1A62D6401 /* [CP] Check Pods Manifest.lock */,
 				00FFC16F221301F300D1D6D7 /* Sources */,
@@ -246,9 +246,9 @@
 			dependencies = (
 				00FFC175221301F300D1D6D7 /* PBXTargetDependency */,
 			);
-			name = CloudStorageUITests;
+			name = BitcoinWalletUITests;
 			productName = CloudStorageUITests;
-			productReference = 00FFC173221301F300D1D6D7 /* CloudStorageUITests.xctest */;
+			productReference = 00FFC173221301F300D1D6D7 /* BitcoinWalletUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -279,7 +279,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 00FFC14F221301F000D1D6D7 /* Build configuration list for PBXProject "CloudStorage" */;
+			buildConfigurationList = 00FFC14F221301F000D1D6D7 /* Build configuration list for PBXProject "BitcoinWallet" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -292,9 +292,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				00FFC153221301F000D1D6D7 /* CloudStorage */,
-				00FFC167221301F300D1D6D7 /* CloudStorageTests */,
-				00FFC172221301F300D1D6D7 /* CloudStorageUITests */,
+				00FFC153221301F000D1D6D7 /* BitcoinWallet */,
+				00FFC167221301F300D1D6D7 /* BitcoinWalletTests */,
+				00FFC172221301F300D1D6D7 /* BitcoinWalletUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -478,12 +478,12 @@
 /* Begin PBXTargetDependency section */
 		00FFC16A221301F300D1D6D7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 00FFC153221301F000D1D6D7 /* CloudStorage */;
+			target = 00FFC153221301F000D1D6D7 /* BitcoinWallet */;
 			targetProxy = 00FFC169221301F300D1D6D7 /* PBXContainerItemProxy */;
 		};
 		00FFC175221301F300D1D6D7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 00FFC153221301F000D1D6D7 /* CloudStorage */;
+			target = 00FFC153221301F000D1D6D7 /* BitcoinWallet */;
 			targetProxy = 00FFC174221301F300D1D6D7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -631,7 +631,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5G36Y3GU6A;
-				INFOPLIST_FILE = CloudStorage/Info.plist;
+				INFOPLIST_FILE = BitcoinWallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -650,7 +650,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5G36Y3GU6A;
-				INFOPLIST_FILE = CloudStorage/Info.plist;
+				INFOPLIST_FILE = BitcoinWallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -680,7 +680,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudStorage.app/CloudStorage";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitcoinWallet.app/BitcoinWallet";
 			};
 			name = Debug;
 		};
@@ -702,7 +702,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudStorage.app/CloudStorage";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitcoinWallet.app/BitcoinWallet";
 			};
 			name = Release;
 		};
@@ -751,7 +751,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00FFC14F221301F000D1D6D7 /* Build configuration list for PBXProject "CloudStorage" */ = {
+		00FFC14F221301F000D1D6D7 /* Build configuration list for PBXProject "BitcoinWallet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00FFC17A221301F300D1D6D7 /* Debug */,
@@ -760,7 +760,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		00FFC17C221301F300D1D6D7 /* Build configuration list for PBXNativeTarget "CloudStorage" */ = {
+		00FFC17C221301F300D1D6D7 /* Build configuration list for PBXNativeTarget "BitcoinWallet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00FFC17D221301F300D1D6D7 /* Debug */,
@@ -769,7 +769,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		00FFC17F221301F300D1D6D7 /* Build configuration list for PBXNativeTarget "CloudStorageTests" */ = {
+		00FFC17F221301F300D1D6D7 /* Build configuration list for PBXNativeTarget "BitcoinWalletTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00FFC180221301F300D1D6D7 /* Debug */,
@@ -778,7 +778,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		00FFC182221301F300D1D6D7 /* Build configuration list for PBXNativeTarget "CloudStorageUITests" */ = {
+		00FFC182221301F300D1D6D7 /* Build configuration list for PBXNativeTarget "BitcoinWalletUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00FFC183221301F300D1D6D7 /* Debug */,
