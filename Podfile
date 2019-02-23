@@ -1,10 +1,10 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '11.0'
 
-target 'CloudStorage' do
+target 'BitcoinWallet' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-
+  
   # Pods for CloudStorage
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
@@ -17,15 +17,16 @@ target 'CloudStorage' do
   pod 'lottie-ios'
   pod 'Eureka'
   pod 'SnapKit'
-
-  target 'CloudStorageTests' do
+  pod 'HSBitcoinKit'
+  
+  target 'BitcoinWalletTests' do
     inherit! :search_paths
     # Pods for testing
   end
-
-  target 'CloudStorageUITests' do
+  
+  target 'BitcoinWalletUITests' do
     inherit! :search_paths
     # Pods for testing
   end
-
+  
 end

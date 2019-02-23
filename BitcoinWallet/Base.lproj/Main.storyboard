@@ -12,7 +12,7 @@
         <!--Splash Screen View Controller-->
         <scene sceneID="0PJ-wD-db6">
             <objects>
-                <viewController id="PL9-2K-JSr" customClass="SplashScreenViewController" customModule="CloudStorage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="PL9-2K-JSr" customClass="SplashScreenViewController" customModule="BitcoinWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OcK-Va-ap6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,7 +45,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CloudStorage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BitcoinWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,8 +81,8 @@
                                     <segment title="Sign up"/>
                                 </segments>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cloud Storage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdK-j0-OQj">
-                                <rect key="frame" x="114" y="157" width="161" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bitcoin Wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdK-j0-OQj">
+                                <rect key="frame" x="114" y="157" width="152" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
@@ -116,7 +116,7 @@
         <!--Home-->
         <scene sceneID="F3u-uT-OCM">
             <objects>
-                <viewController id="3jp-a6-41K" customClass="ViewController2" customModule="CloudStorage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3jp-a6-41K" customClass="ViewController2" customModule="BitcoinWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hrg-Kg-lsQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -168,7 +168,7 @@
         <!--Recive-->
         <scene sceneID="I7k-hw-QRr">
             <objects>
-                <viewController id="1bm-ep-eN3" customClass="QRScannerViewController" customModule="CloudStorage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1bm-ep-eN3" customClass="QRScannerViewController" customModule="BitcoinWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IDn-xm-1QE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -220,7 +220,7 @@
         <!--Settings-->
         <scene sceneID="JvY-cp-dl2">
             <objects>
-                <viewController id="82t-Se-hG3" customClass="SettingsViewController" customModule="CloudStorage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="82t-Se-hG3" customClass="SettingsViewController" customModule="BitcoinWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QV4-PE-bNY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -245,7 +245,7 @@
         <!--Main Tab Bar View Controller-->
         <scene sceneID="36X-In-m7u">
             <objects>
-                <tabBarController id="C7g-FN-HSK" customClass="MainTabBarViewController" customModule="CloudStorage" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="C7g-FN-HSK" customClass="MainTabBarViewController" customModule="BitcoinWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Nr7-yA-ySG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

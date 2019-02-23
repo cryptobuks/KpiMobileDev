@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import HSBitcoinKit
 
 class ViewController2: UIViewController {
 
@@ -27,6 +28,8 @@ class ViewController2: UIViewController {
         let date = Auth.auth().currentUser?.metadata.creationDate
         info.text = date?.description
         print(Auth.auth().currentUser?.email)
+        
+        test()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,6 +39,13 @@ class ViewController2: UIViewController {
     
     override open var shouldAutorotate: Bool {
         return false
+    }
+    
+    func test() {
+//        let words = ["word1", "words2", "words3"]
+//        let smth1 = BitcoinKit.init(withWords: words, coin: BitcoinKit.Coin.bitcoin(network: .testNet), walletId: "", confirmationsThreshold: 1)
+//
+//        print(smth1.balance)
     }
     
 

@@ -19,14 +19,14 @@
 		00FFC15D221301F000D1D6D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FFC15B221301F000D1D6D7 /* Main.storyboard */; };
 		00FFC15F221301F300D1D6D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00FFC15E221301F300D1D6D7 /* Assets.xcassets */; };
 		00FFC162221301F300D1D6D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FFC160221301F300D1D6D7 /* LaunchScreen.storyboard */; };
-		00FFC16D221301F300D1D6D7 /* CloudStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FFC16C221301F300D1D6D7 /* CloudStorageTests.swift */; };
-		00FFC178221301F300D1D6D7 /* CloudStorageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FFC177221301F300D1D6D7 /* CloudStorageUITests.swift */; };
+		00FFC16D221301F300D1D6D7 /* BitcoinWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FFC16C221301F300D1D6D7 /* BitcoinWalletTests.swift */; };
+		00FFC178221301F300D1D6D7 /* BitcoinWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FFC177221301F300D1D6D7 /* BitcoinWalletUITests.swift */; };
 		00FFC1862213029700D1D6D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00FFC1852213029700D1D6D7 /* GoogleService-Info.plist */; };
 		00FFC1872213029700D1D6D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00FFC1852213029700D1D6D7 /* GoogleService-Info.plist */; };
 		00FFC1882213029700D1D6D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00FFC1852213029700D1D6D7 /* GoogleService-Info.plist */; };
-		775290B1E4E5BB3EC28B20FE /* Pods_CloudStorageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF0675FF7C1D8349B0DF5BF /* Pods_CloudStorageTests.framework */; };
-		90A2F4DBCF635EA4B5D8DFE3 /* Pods_CloudStorageUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8D138B987D8DBF4CD39446 /* Pods_CloudStorageUITests.framework */; };
-		C5E872EF203176D854AB9D45 /* Pods_CloudStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA6189601D9A882F309E96F /* Pods_CloudStorage.framework */; };
+		1539E11D7AC4E080DA3FEC1D /* Pods_BitcoinWalletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822461C63FF4594F9C2F56AB /* Pods_BitcoinWalletTests.framework */; };
+		37119074C5C0D6E427A675CC /* Pods_BitcoinWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A0E5E427C608C9FE358FDD /* Pods_BitcoinWallet.framework */; };
+		B18675F96AD047521AA8A735 /* Pods_BitcoinWalletUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779137A23B692F43AA832C1F /* Pods_BitcoinWalletUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,21 +62,21 @@
 		00FFC161221301F300D1D6D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00FFC163221301F300D1D6D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00FFC168221301F300D1D6D7 /* BitcoinWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitcoinWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		00FFC16C221301F300D1D6D7 /* CloudStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudStorageTests.swift; sourceTree = "<group>"; };
+		00FFC16C221301F300D1D6D7 /* BitcoinWalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinWalletTests.swift; sourceTree = "<group>"; };
 		00FFC16E221301F300D1D6D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00FFC173221301F300D1D6D7 /* BitcoinWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitcoinWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		00FFC177221301F300D1D6D7 /* CloudStorageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudStorageUITests.swift; sourceTree = "<group>"; };
+		00FFC177221301F300D1D6D7 /* BitcoinWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinWalletUITests.swift; sourceTree = "<group>"; };
 		00FFC179221301F300D1D6D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00FFC1852213029700D1D6D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		0A348EA9711DA7028910922E /* Pods-CloudStorage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudStorage.debug.xcconfig"; path = "Target Support Files/Pods-CloudStorage/Pods-CloudStorage.debug.xcconfig"; sourceTree = "<group>"; };
-		2D64CFAC596E8ECD729C9F24 /* Pods-CloudStorageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudStorageUITests.debug.xcconfig"; path = "Target Support Files/Pods-CloudStorageUITests/Pods-CloudStorageUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		3467F520447BA850D610A711 /* Pods-CloudStorage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudStorage.release.xcconfig"; path = "Target Support Files/Pods-CloudStorage/Pods-CloudStorage.release.xcconfig"; sourceTree = "<group>"; };
-		7BF0675FF7C1D8349B0DF5BF /* Pods_CloudStorageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudStorageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		98DCEDB810AB93D32C085233 /* Pods-CloudStorageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudStorageTests.release.xcconfig"; path = "Target Support Files/Pods-CloudStorageTests/Pods-CloudStorageTests.release.xcconfig"; sourceTree = "<group>"; };
-		AF8D138B987D8DBF4CD39446 /* Pods_CloudStorageUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudStorageUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFA6189601D9A882F309E96F /* Pods_CloudStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D13C01F4CF21FB30974803AD /* Pods-CloudStorageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudStorageTests.debug.xcconfig"; path = "Target Support Files/Pods-CloudStorageTests/Pods-CloudStorageTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D9FCCF7628B60C983DE9A949 /* Pods-CloudStorageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudStorageUITests.release.xcconfig"; path = "Target Support Files/Pods-CloudStorageUITests/Pods-CloudStorageUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0C56EDD431D6D602BE481432 /* Pods-BitcoinWalletUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcoinWalletUITests.release.xcconfig"; path = "Target Support Files/Pods-BitcoinWalletUITests/Pods-BitcoinWalletUITests.release.xcconfig"; sourceTree = "<group>"; };
+		50A0E5E427C608C9FE358FDD /* Pods_BitcoinWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcoinWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E623C97FD6939D9E2C83EE2 /* Pods-BitcoinWalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcoinWalletTests.release.xcconfig"; path = "Target Support Files/Pods-BitcoinWalletTests/Pods-BitcoinWalletTests.release.xcconfig"; sourceTree = "<group>"; };
+		779137A23B692F43AA832C1F /* Pods_BitcoinWalletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcoinWalletUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		822461C63FF4594F9C2F56AB /* Pods_BitcoinWalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcoinWalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A8E405B7D99735E1A76410 /* Pods-BitcoinWalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcoinWalletTests.debug.xcconfig"; path = "Target Support Files/Pods-BitcoinWalletTests/Pods-BitcoinWalletTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E5C7347EE23EC13C3C923C37 /* Pods-BitcoinWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcoinWallet.debug.xcconfig"; path = "Target Support Files/Pods-BitcoinWallet/Pods-BitcoinWallet.debug.xcconfig"; sourceTree = "<group>"; };
+		EA3F67A0A47F0481E22A6267 /* Pods-BitcoinWalletUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcoinWalletUITests.debug.xcconfig"; path = "Target Support Files/Pods-BitcoinWalletUITests/Pods-BitcoinWalletUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FAAA2A3935D5CDADAF981B97 /* Pods-BitcoinWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcoinWallet.release.xcconfig"; path = "Target Support Files/Pods-BitcoinWallet/Pods-BitcoinWallet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5E872EF203176D854AB9D45 /* Pods_CloudStorage.framework in Frameworks */,
+				37119074C5C0D6E427A675CC /* Pods_BitcoinWallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				775290B1E4E5BB3EC28B20FE /* Pods_CloudStorageTests.framework in Frameworks */,
+				1539E11D7AC4E080DA3FEC1D /* Pods_BitcoinWalletTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90A2F4DBCF635EA4B5D8DFE3 /* Pods_CloudStorageUITests.framework in Frameworks */,
+				B18675F96AD047521AA8A735 /* Pods_BitcoinWalletUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,8 +114,8 @@
 				00FFC16B221301F300D1D6D7 /* BitcoinWalletTests */,
 				00FFC176221301F300D1D6D7 /* BitcoinWalletUITests */,
 				00FFC155221301F000D1D6D7 /* Products */,
-				33626CCCB2F8ACBC5F23C8DE /* Pods */,
 				600561506BCA6A6BB7B3F5C6 /* Frameworks */,
+				129790E041257FCEEEA32D7B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,7 +153,7 @@
 		00FFC16B221301F300D1D6D7 /* BitcoinWalletTests */ = {
 			isa = PBXGroup;
 			children = (
-				00FFC16C221301F300D1D6D7 /* CloudStorageTests.swift */,
+				00FFC16C221301F300D1D6D7 /* BitcoinWalletTests.swift */,
 				00FFC16E221301F300D1D6D7 /* Info.plist */,
 			);
 			path = BitcoinWalletTests;
@@ -162,21 +162,21 @@
 		00FFC176221301F300D1D6D7 /* BitcoinWalletUITests */ = {
 			isa = PBXGroup;
 			children = (
-				00FFC177221301F300D1D6D7 /* CloudStorageUITests.swift */,
+				00FFC177221301F300D1D6D7 /* BitcoinWalletUITests.swift */,
 				00FFC179221301F300D1D6D7 /* Info.plist */,
 			);
 			path = BitcoinWalletUITests;
 			sourceTree = "<group>";
 		};
-		33626CCCB2F8ACBC5F23C8DE /* Pods */ = {
+		129790E041257FCEEEA32D7B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0A348EA9711DA7028910922E /* Pods-CloudStorage.debug.xcconfig */,
-				3467F520447BA850D610A711 /* Pods-CloudStorage.release.xcconfig */,
-				D13C01F4CF21FB30974803AD /* Pods-CloudStorageTests.debug.xcconfig */,
-				98DCEDB810AB93D32C085233 /* Pods-CloudStorageTests.release.xcconfig */,
-				2D64CFAC596E8ECD729C9F24 /* Pods-CloudStorageUITests.debug.xcconfig */,
-				D9FCCF7628B60C983DE9A949 /* Pods-CloudStorageUITests.release.xcconfig */,
+				E5C7347EE23EC13C3C923C37 /* Pods-BitcoinWallet.debug.xcconfig */,
+				FAAA2A3935D5CDADAF981B97 /* Pods-BitcoinWallet.release.xcconfig */,
+				A5A8E405B7D99735E1A76410 /* Pods-BitcoinWalletTests.debug.xcconfig */,
+				5E623C97FD6939D9E2C83EE2 /* Pods-BitcoinWalletTests.release.xcconfig */,
+				EA3F67A0A47F0481E22A6267 /* Pods-BitcoinWalletUITests.debug.xcconfig */,
+				0C56EDD431D6D602BE481432 /* Pods-BitcoinWalletUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -184,9 +184,9 @@
 		600561506BCA6A6BB7B3F5C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BFA6189601D9A882F309E96F /* Pods_CloudStorage.framework */,
-				7BF0675FF7C1D8349B0DF5BF /* Pods_CloudStorageTests.framework */,
-				AF8D138B987D8DBF4CD39446 /* Pods_CloudStorageUITests.framework */,
+				50A0E5E427C608C9FE358FDD /* Pods_BitcoinWallet.framework */,
+				822461C63FF4594F9C2F56AB /* Pods_BitcoinWalletTests.framework */,
+				779137A23B692F43AA832C1F /* Pods_BitcoinWalletUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -346,7 +346,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CloudStorage-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BitcoinWallet-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -368,7 +368,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CloudStorageTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BitcoinWalletTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -383,12 +383,24 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CloudStorage/Pods-CloudStorage-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-BitcoinWallet/Pods-BitcoinWallet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/HSBitcoinKit/HSBitcoinKit.framework",
+				"${BUILT_PRODUCTS_DIR}/HSCryptoKit/HSCryptoKit.framework",
+				"${BUILT_PRODUCTS_DIR}/HSHDWalletKit/HSHDWalletKit.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/QRCodeReader.swift/QRCodeReader.framework",
 				"${BUILT_PRODUCTS_DIR}/QuickTableViewController/QuickTableViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
 				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -400,11 +412,23 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HSBitcoinKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HSCryptoKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HSHDWalletKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCodeReader.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QuickTableViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -414,7 +438,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CloudStorage/Pods-CloudStorage-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BitcoinWallet/Pods-BitcoinWallet-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8BA37C7763AD67E1A62D6401 /* [CP] Check Pods Manifest.lock */ = {
@@ -432,7 +456,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CloudStorageUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BitcoinWalletUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -461,7 +485,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00FFC16D221301F300D1D6D7 /* CloudStorageTests.swift in Sources */,
+				00FFC16D221301F300D1D6D7 /* BitcoinWalletTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,7 +493,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00FFC178221301F300D1D6D7 /* CloudStorageUITests.swift in Sources */,
+				00FFC178221301F300D1D6D7 /* BitcoinWalletUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,18 +650,20 @@
 		};
 		00FFC17D221301F300D1D6D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A348EA9711DA7028910922E /* Pods-CloudStorage.debug.xcconfig */;
+			baseConfigurationReference = E5C7347EE23EC13C3C923C37 /* Pods-BitcoinWallet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5G36Y3GU6A;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BitcoinWallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Lado.CloudStorage;
+				PRODUCT_BUNDLE_IDENTIFIER = Lado.BitcoinWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_REFLECTION_METADATA_LEVEL = none;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -645,18 +671,20 @@
 		};
 		00FFC17E221301F300D1D6D7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3467F520447BA850D610A711 /* Pods-CloudStorage.release.xcconfig */;
+			baseConfigurationReference = FAAA2A3935D5CDADAF981B97 /* Pods-BitcoinWallet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5G36Y3GU6A;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BitcoinWallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Lado.CloudStorage;
+				PRODUCT_BUNDLE_IDENTIFIER = Lado.BitcoinWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_REFLECTION_METADATA_LEVEL = none;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -664,7 +692,7 @@
 		};
 		00FFC180221301F300D1D6D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D13C01F4CF21FB30974803AD /* Pods-CloudStorageTests.debug.xcconfig */;
+			baseConfigurationReference = A5A8E405B7D99735E1A76410 /* Pods-BitcoinWalletTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -686,7 +714,7 @@
 		};
 		00FFC181221301F300D1D6D7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98DCEDB810AB93D32C085233 /* Pods-CloudStorageTests.release.xcconfig */;
+			baseConfigurationReference = 5E623C97FD6939D9E2C83EE2 /* Pods-BitcoinWalletTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -708,7 +736,7 @@
 		};
 		00FFC183221301F300D1D6D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D64CFAC596E8ECD729C9F24 /* Pods-CloudStorageUITests.debug.xcconfig */;
+			baseConfigurationReference = EA3F67A0A47F0481E22A6267 /* Pods-BitcoinWalletUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -729,7 +757,7 @@
 		};
 		00FFC184221301F300D1D6D7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9FCCF7628B60C983DE9A949 /* Pods-CloudStorageUITests.release.xcconfig */;
+			baseConfigurationReference = 0C56EDD431D6D602BE481432 /* Pods-BitcoinWalletUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
