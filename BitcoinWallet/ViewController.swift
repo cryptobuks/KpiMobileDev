@@ -158,8 +158,13 @@ class ViewController: UIViewController, UITextFieldDelegate{
         // Do any additional setup after loading the view, typically from a nib.
         
         //set placeholder for textfields
-        emailText.placeholder = "email"
-        passText.placeholder = "password"
+        emailText.placeholder = "Email"
+        passText.placeholder = "Password"
+        //set broder
+        emailText.borderStyle = .roundedRect
+        emailText.selectedLineColor = UIColor.lightGray
+        passText.borderStyle = .roundedRect
+        passText.selectedLineColor = UIColor.lightGray
         
         self.emailText.delegate = self
         self.passText.delegate = self

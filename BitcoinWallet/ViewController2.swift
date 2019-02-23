@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import HSBitcoinKit
+import Alamofire
 
 class ViewController2: UIViewController {
 
@@ -42,10 +43,11 @@ class ViewController2: UIViewController {
     }
     
     func test() {
-//        let words = ["word1", "words2", "words3"]
-//        let smth1 = BitcoinKit.init(withWords: words, coin: BitcoinKit.Coin.bitcoin(network: .testNet), walletId: "", confirmationsThreshold: 1)
-//
-//        print(smth1.balance)
+        Alamofire.request("https://blockchain.info/rawblock/0000000000000bae09a7a393a8acded75aa67e46cb81f7acaa5ad94f9eacd103").responseData {(resData) -> Void in
+            print(resData.result.value!)
+            let strOutput = String(data : resData.result.value!, encoding : String.Encoding.utf8)
+            print(strOutput)
+        }
     }
     
 
