@@ -17,13 +17,15 @@ class ViewController: UIViewController, UITextFieldDelegate{
     
     @IBOutlet weak var passText: SkyFloatingLabelTextField!
     
-    @IBOutlet weak var segmentControl: UISegmentedControl!
-    
     @IBOutlet weak var actionButton: UIButton!
     
     @IBOutlet weak var cloudLabel: UILabel!
     
-    @IBOutlet weak var DarkSwitch: UISwitch!
+    @IBOutlet weak var registerBtn: UIButton!
+    
+    @IBAction func goRegisterView(_ sender: Any) {
+        performSegue(withIdentifier: "goRegister", sender: self)
+    }
     
     @IBAction func action(_ sender: UIButton) {
         
@@ -37,98 +39,28 @@ class ViewController: UIViewController, UITextFieldDelegate{
             passText.errorMessage = "Invalid password"
         }
         
-        //auth by touch id
-        if emailText.text != "" {
-            if segmentControl.selectedSegmentIndex == 0 {
-                
-                Auth.auth().fetchSignInMethods(forEmail: emailText.text!) { (signInMethods, error) in
-                    if let error = error {
-                        print("Error Error Error Error Error ",error)
-                    } else if let signInMethods = signInMethods?.contains(EmailLinkAuthSignInMethod) {
-                        print("BBBBBBBBB ", signInMethods)
-                    }
-                }
-                
-                Auth.auth().fetchProviders(forEmail: emailText.text!) { (providers, error) in
-                    if let error = error {
-                        print(error.localizedDescription)
-                    } else if let providers = providers {
-                        print("AAAAAAA ", providers)
-                        
-                        //touch id
-                        let myContext = LAContext()
-                        let myLocalizedReasonString = "Cloud Authntication"
-                        
-                        var authError: NSError?
-                        if #available(iOS 8.0, macOS 10.12.1, *) {
-                            if myContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &authError) {
-                                myContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: myLocalizedReasonString) { success, evaluateError in
-                                    
-                                    DispatchQueue.main.async {
-                                        if success {
-                                            // User authenticated successfully, take appropriate action
-                                            print("Awesome!!... User authenticated successfully")
-                                            self.performSegue(withIdentifier: "goHome", sender: self)
-                                        } else {
-                                            // User did not authenticate successfully, look at error and take appropriate action
-                                            print("Sorry!!... User did not authenticate successfully")
-                                        }
-                                    }
-                                }
-                            } else {
-                                // Could not evaluate policy; look at authError and present an appropriate message to user
-                                print("Sorry!!.. Could not evaluate policy.")
-                            }
-                        } else {
-                            // Fallback on earlier versions
-                            print("Ooops!!.. This feature is not supported.")
-                        }
-                    }
-                }
-            }
-        }
-        
         //Login & Sign Up
         if emailText.text != "" && passText.text != "" {
-            if segmentControl.selectedSegmentIndex == 0 { //Login
-                Auth.auth().signIn(withEmail: emailText.text!, password: passText.text!, completion: { (user, error) in
-                    if user != nil {
-                        // Sign in successful
-                        self.performSegue(withIdentifier: "goHome", sender: self)
+             //Login
+            Auth.auth().signIn(withEmail: emailText.text!, password: passText.text!, completion: { (user, error) in
+                if user != nil {
+                    // Sign in successful
+                    self.performSegue(withIdentifier: "goHome", sender: self)
+                } else {
+                    if let myError = error?.localizedDescription {
+                        let alertController = UIAlertController(title: "Error", message: myError, preferredStyle: UIAlertController.Style.alert)
+                        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                        self.present(alertController, animated: true, completion: nil)
+                        print(myError)
                     } else {
-                        if let myError = error?.localizedDescription {
-                            let alertController = UIAlertController(title: "Error", message: myError, preferredStyle: UIAlertController.Style.alert)
-                            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-                            self.present(alertController, animated: true, completion: nil)
-                            print(myError)
-                        } else {
-                            let alertController = UIAlertController(title: "Error", message: "Error!", preferredStyle: UIAlertController.Style.alert)
-                            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-                            self.present(alertController, animated: true, completion: nil)
-                            print("Error!")
-                        }
-                    }
-                })
-            } else { //Sign up
-                Auth.auth().createUser(withEmail: emailText.text!, password: passText.text!) { (user, error) in
-                    if user != nil {
-                        self.performSegue(withIdentifier: "goHome", sender: self)
-                    } else {
-                        if let myError = error?.localizedDescription {
-                            let alertController = UIAlertController(title: "Error", message: myError, preferredStyle: UIAlertController.Style.alert)
-                            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-                            self.present(alertController, animated: true, completion: nil)
-                            print(myError)
-                        } else {
-                            let alertController = UIAlertController(title: "Error", message: "Error!", preferredStyle: UIAlertController.Style.alert)
-                            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-                            self.present(alertController, animated: true, completion: nil)
-                            print("Error!")
-                        }
+                        let alertController = UIAlertController(title: "Error", message: "Error!", preferredStyle: UIAlertController.Style.alert)
+                        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                        self.present(alertController, animated: true, completion: nil)
+                        print("Error!")
                     }
                 }
-            }
-        }
+            })
+        } 
     }
     
     //background color using hex
@@ -165,23 +97,11 @@ class ViewController: UIViewController, UITextFieldDelegate{
         }
     }
     
-    var DarkOn = Bool()
-    
-    @IBAction func DarkAction(_ sender: Any) {
-        if DarkSwitch.isOn == true {
-            self.view.backgroundColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 1.0)
-            
-            cloudLabel.textColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-            
-        } else {
-            self.view.backgroundColor = hexStringToUIColor(hex: "#041D34")
-            cloudLabel.textColor = hexStringToUIColor(hex: "#76B6D7")
-        }
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        emailText.setPadding()
+        passText.setPadding()
         
         //set placeholder for textfields and set colors
         emailText.placeholder = "Email"
@@ -219,20 +139,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
         
         //set background for button
         actionButton.setTitleColor(hexStringToUIColor(hex: "#68C80C"), for: .normal)
-        
-        //change segmentation control
-        segmentControl.backgroundColor = .clear
-        segmentControl.tintColor = .clear
-        
-        segmentControl.setTitleTextAttributes([
-            NSAttributedString.Key.font : UIFont(name: "DINCondensed-Bold", size: 22),
-            NSAttributedString.Key.foregroundColor: UIColor.lightGray
-            ], for: .normal)
-        
-        segmentControl.setTitleTextAttributes([
-            NSAttributedString.Key.font : UIFont(name: "DINCondensed-Bold", size: 22),
-            NSAttributedString.Key.foregroundColor: UIColor.orange
-            ], for: .selected)
+        registerBtn.setTitleColor(hexStringToUIColor(hex: "#68C80C"), for: .normal)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -252,3 +159,17 @@ class ViewController: UIViewController, UITextFieldDelegate{
     }
 }
 
+extension SkyFloatingLabelTextField {
+    func setPadding() {
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: self.frame.height))
+        self.leftView = paddingView
+        self.leftViewMode = .always
+    }
+    
+    func setBottomBorder() {
+        self.layer.shadowColor = UIColor.darkGray.cgColor
+        self.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+        self.layer.shadowOpacity = 1.0
+        self.layer.shadowRadius = 0.0
+    }
+}
