@@ -99,8 +99,16 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        //set padding for text
+        email.setPadding()
+        password.setPadding()
+        reneterPass.setPadding()
+        
+        //set masked corner for passText
+        reneterPass.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
+        
         //set placeholder for textfields and set colors
         email.placeholder = "Email"
         email.placeholderColor = hexStringToUIColor(hex: "#76B6D7")

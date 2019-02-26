@@ -50,13 +50,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D2P-wA-Ui0" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                <rect key="frame" x="40" y="247" width="309" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdK-j0-OQj">
                                 <rect key="frame" x="156" y="158" width="63" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -85,11 +78,18 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e1F-3y-8ww" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                <rect key="frame" x="40" y="333" width="309" height="48"/>
+                                <rect key="frame" x="33" y="337" width="309" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ejU-ys-7Fj" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                <rect key="frame" x="33" y="238" width="309" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.015686274509803921" green="0.11372549019607843" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -98,7 +98,7 @@
                     <connections>
                         <outlet property="actionButton" destination="0tT-s8-kJs" id="zwP-Qk-n7Y"/>
                         <outlet property="cloudLabel" destination="vdK-j0-OQj" id="rFv-yN-uCC"/>
-                        <outlet property="emailText" destination="D2P-wA-Ui0" id="QfV-eh-Rm8"/>
+                        <outlet property="emailText" destination="ejU-ys-7Fj" id="BpO-V3-tBW"/>
                         <outlet property="passText" destination="e1F-3y-8ww" id="i2d-yl-8gu"/>
                         <outlet property="registerBtn" destination="zY5-Pm-BOk" id="0jD-l3-F2r"/>
                         <segue destination="C7g-FN-HSK" kind="show" identifier="goHome" id="rGz-UM-9bY"/>
