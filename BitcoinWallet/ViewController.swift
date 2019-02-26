@@ -107,6 +107,10 @@ class ViewController: UIViewController, UITextFieldDelegate{
         
         //set masked corner for passText
         passText.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
+        passText.clipsToBounds = true
+        
+        emailText.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner, .layerMinXMinYCorner, .layerMaxXMinYCorner]
+        emailText.clipsToBounds = true
         
         //set placeholder for textfields and set colors
         emailText.placeholder = "Email"
