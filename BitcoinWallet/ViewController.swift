@@ -131,8 +131,34 @@ class ViewController: UIViewController, UITextFieldDelegate{
         }
     }
     
+    //background color using hex
+    func hexStringToUIColor (hex:String) -> UIColor {
+        var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+        
+        if (cString.hasPrefix("#")) {
+            cString.remove(at: cString.startIndex)
+        }
+        
+        if ((cString.count) != 6) {
+            return UIColor.gray
+        }
+        
+        var rgbValue:UInt32 = 0
+        Scanner(string: cString).scanHexInt32(&rgbValue)
+        
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        //set background color and label text color
+        self.view.backgroundColor = hexStringToUIColor(hex: "#041D34")
+        cloudLabel.textColor = hexStringToUIColor(hex: "#76B6D7")
         //kepp a user log in, even if they close the app
         if Auth.auth().currentUser != nil {
             self.performSegue(withIdentifier: "goHome", sender: self)
@@ -148,8 +174,8 @@ class ViewController: UIViewController, UITextFieldDelegate{
             cloudLabel.textColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             
         } else {
-            self.view.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-            cloudLabel.textColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 1.0)
+            self.view.backgroundColor = hexStringToUIColor(hex: "#041D34")
+            cloudLabel.textColor = hexStringToUIColor(hex: "#76B6D7")
         }
     }
     
@@ -157,14 +183,29 @@ class ViewController: UIViewController, UITextFieldDelegate{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //set placeholder for textfields
+        //set placeholder for textfields and set colors
         emailText.placeholder = "Email"
+        emailText.placeholderColor = hexStringToUIColor(hex: "#76B6D7")
+        emailText.tintColor = hexStringToUIColor(hex: "#76B6D7")
+        emailText.selectedTitleColor = hexStringToUIColor(hex: "#76B6D7")
+        
         passText.placeholder = "Password"
-        //set broder and color
-        emailText.borderStyle = .roundedRect
-        emailText.selectedLineColor = UIColor.lightGray
-        passText.borderStyle = .roundedRect
-        passText.selectedLineColor = UIColor.lightGray
+        passText.placeholderColor = hexStringToUIColor(hex: "#76B6D7")
+        passText.tintColor = hexStringToUIColor(hex: "#76B6D7")
+        passText.selectedTitleColor = hexStringToUIColor(hex: "#76B6D7")
+        
+        //set broder and color for textfields
+        emailText.backgroundColor = hexStringToUIColor(hex: "#1F384E")
+        emailText.layer.cornerRadius = 12.0
+        emailText.layer.borderWidth = 2.0
+        emailText.layer.borderColor = hexStringToUIColor(hex: "#1F384E").cgColor
+        emailText.textColor = hexStringToUIColor(hex: "#76B6D7")
+        
+        passText.backgroundColor = hexStringToUIColor(hex: "#1F384E")
+        passText.layer.cornerRadius = 12.0
+        passText.layer.borderWidth = 2.0
+        passText.layer.borderColor = hexStringToUIColor(hex: "#1F384E").cgColor
+        passText.textColor = hexStringToUIColor(hex: "#76B6D7")
         
         //clear button
         emailText.clearButtonMode = .whileEditing
@@ -175,6 +216,9 @@ class ViewController: UIViewController, UITextFieldDelegate{
         
         emailText.returnKeyType = UIReturnKeyType.next
         passText.returnKeyType = UIReturnKeyType.go
+        
+        //set background for button
+        actionButton.setTitleColor(hexStringToUIColor(hex: "#68C80C"), for: .normal)
         
         //change segmentation control
         segmentControl.backgroundColor = .clear
