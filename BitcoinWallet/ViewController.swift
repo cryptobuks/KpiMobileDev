@@ -160,11 +160,15 @@ class ViewController: UIViewController, UITextFieldDelegate{
         //set placeholder for textfields
         emailText.placeholder = "Email"
         passText.placeholder = "Password"
-        //set broder
+        //set broder and color
         emailText.borderStyle = .roundedRect
         emailText.selectedLineColor = UIColor.lightGray
         passText.borderStyle = .roundedRect
         passText.selectedLineColor = UIColor.lightGray
+        
+        //clear button
+        emailText.clearButtonMode = .whileEditing
+        passText.clearButtonMode = .whileEditing
         
         self.emailText.delegate = self
         self.passText.delegate = self

@@ -18,6 +18,8 @@ target 'BitcoinWallet' do
   pod 'Eureka'
   pod 'SnapKit'
   pod 'HSBitcoinKit'
+  pod 'SwiftyJSON'
+  pod 'JWTDecode', '~> 2.2'
   
   target 'BitcoinWalletTests' do
     inherit! :search_paths

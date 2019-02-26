@@ -10,6 +10,8 @@ import UIKit
 import FirebaseAuth
 import HSBitcoinKit
 import Alamofire
+import SwiftyJSON
+import JWTDecode
 
 class ViewController2: UIViewController {
 
@@ -43,11 +45,24 @@ class ViewController2: UIViewController {
     }
     
     func test() {
-        Alamofire.request("https://blockchain.info/rawblock/0000000000000bae09a7a393a8acded75aa67e46cb81f7acaa5ad94f9eacd103").responseData {(resData) -> Void in
-            print(resData.result.value!)
-            let strOutput = String(data : resData.result.value!, encoding : String.Encoding.utf8)
-            print(strOutput)
+        //GET request form JSON
+        Alamofire.request("https://blockchain.info/rawblock/0000000000000bae09a7a393a8acded75aa67e46cb81f7acaa5ad94f9eacd103").responseJSON {(resData) -> Void in
+            if resData.result.value != nil {
+                let swiftyJsonVar = JSON(resData.result.value!)
+                print(swiftyJsonVar)
+            }
         }
+        
+        //get name from JWT
+        do {
+            let jwt = try decode(jwt: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c")
+            print(jwt.body)
+            let claim = jwt.claim(name: "name")
+            print(claim.string)
+        } catch {
+            print("Error")
+        }
+        
     }
     
 
