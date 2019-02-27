@@ -167,6 +167,11 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         return false
     }
     
+    //change color of status bar
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
 
     /*
     // MARK: - Navigation

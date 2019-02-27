@@ -20,7 +20,7 @@ target 'BitcoinWallet' do
   pod 'HSBitcoinKit'
   pod 'SwiftyJSON'
   pod 'JWTDecode', '~> 2.2'
-  pod 'TKFormTextField'
+  pod 'DTTextField'
   
   target 'BitcoinWalletTests' do
     inherit! :search_paths

@@ -166,5 +166,10 @@ class ViewController: UIViewController, UITextFieldDelegate{
         self.view.endEditing(true)
         return false
     }
+    
+    //change color of status bar
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }
 
