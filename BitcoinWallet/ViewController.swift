@@ -89,8 +89,8 @@ class ViewController: UIViewController, UITextFieldDelegate{
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         //set background color and label text color
-        self.view.backgroundColor = hexStringToUIColor(hex: "#041D34")
-        cloudLabel.textColor = hexStringToUIColor(hex: "#76B6D7")
+        self.view.backgroundColor = hexStringToUIColor(hex: "#292C34")
+        cloudLabel.textColor = hexStringToUIColor(hex: "#D8D8D8")
         //kepp a user log in, even if they close the app
         if Auth.auth().currentUser != nil {
             self.performSegue(withIdentifier: "goHome", sender: self)
@@ -114,27 +114,27 @@ class ViewController: UIViewController, UITextFieldDelegate{
         
         //set placeholder for textfields and set colors
         emailText.placeholder = "Email"
-        emailText.placeholderColor = hexStringToUIColor(hex: "#76B6D7")
-        emailText.tintColor = hexStringToUIColor(hex: "#76B6D7")
-        emailText.selectedTitleColor = hexStringToUIColor(hex: "#76B6D7")
+        emailText.placeholderColor = hexStringToUIColor(hex: "#D8D8D8")
+        emailText.tintColor = hexStringToUIColor(hex: "#1E1F23")
+        emailText.selectedTitleColor = hexStringToUIColor(hex: "#1E1F23")
         
         passText.placeholder = "Password"
-        passText.placeholderColor = hexStringToUIColor(hex: "#76B6D7")
-        passText.tintColor = hexStringToUIColor(hex: "#76B6D7")
-        passText.selectedTitleColor = hexStringToUIColor(hex: "#76B6D7")
+        passText.placeholderColor = hexStringToUIColor(hex: "#D8D8D8")
+        passText.tintColor = hexStringToUIColor(hex: "#1E1F23")
+        passText.selectedTitleColor = hexStringToUIColor(hex: "#1E1F23")
         
         //set broder and color for textfields
-        emailText.backgroundColor = hexStringToUIColor(hex: "#1F384E")
+        emailText.backgroundColor = hexStringToUIColor(hex: "#1E1F23")
+        emailText.layer.borderColor = hexStringToUIColor(hex: "#1E1F23").cgColor
         emailText.layer.cornerRadius = 12.0
         emailText.layer.borderWidth = 2.0
-        emailText.layer.borderColor = hexStringToUIColor(hex: "#1F384E").cgColor
-        emailText.textColor = hexStringToUIColor(hex: "#76B6D7")
+        emailText.textColor = hexStringToUIColor(hex: "#D8D8D8")
         
-        passText.backgroundColor = hexStringToUIColor(hex: "#1F384E")
+        passText.backgroundColor = hexStringToUIColor(hex: "#1E1F23")
+        passText.layer.borderColor = hexStringToUIColor(hex: "#1E1F23").cgColor
         passText.layer.cornerRadius = 12.0
         passText.layer.borderWidth = 2.0
-        passText.layer.borderColor = hexStringToUIColor(hex: "#1F384E").cgColor
-        passText.textColor = hexStringToUIColor(hex: "#76B6D7")
+        passText.textColor = hexStringToUIColor(hex: "#D8D8D8")
         
         //clear button
         emailText.clearButtonMode = .whileEditing
@@ -149,6 +149,13 @@ class ViewController: UIViewController, UITextFieldDelegate{
         //set background for button
         actionButton.setTitleColor(hexStringToUIColor(hex: "#68C80C"), for: .normal)
         registerBtn.setTitleColor(hexStringToUIColor(hex: "#68C80C"), for: .normal)
+        
+        //set corner for button
+        actionButton.layer.borderColor = hexStringToUIColor(hex: "#97C961").cgColor
+        actionButton.clipsToBounds = true
+        actionButton.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMaxXMinYCorner]
+        actionButton.layer.cornerRadius = 12.0
+        actionButton.layer.borderWidth = 2.0
     }
 
     override func viewWillAppear(_ animated: Bool) {

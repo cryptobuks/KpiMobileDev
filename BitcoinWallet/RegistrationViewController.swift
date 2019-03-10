@@ -93,8 +93,8 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         //set background color and label text color
-        self.view.backgroundColor = hexStringToUIColor(hex: "#041D34")
-        registerLabel.textColor = hexStringToUIColor(hex: "#76B6D7")
+        self.view.backgroundColor = hexStringToUIColor(hex: "#292C34")
+        registerLabel.textColor = hexStringToUIColor(hex: "#D8D8D8")
     }
     
     override func viewDidLoad() {
@@ -111,38 +111,38 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         
         //set placeholder for textfields and set colors
         email.placeholder = "Email"
-        email.placeholderColor = hexStringToUIColor(hex: "#76B6D7")
-        email.tintColor = hexStringToUIColor(hex: "#76B6D7")
-        email.selectedTitleColor = hexStringToUIColor(hex: "#76B6D7")
+        email.placeholderColor = hexStringToUIColor(hex: "#1E1F23")
+        email.tintColor = hexStringToUIColor(hex: "#1E1F23")
+        email.selectedTitleColor = hexStringToUIColor(hex: "#1E1F23")
         
         password.placeholder = "Password"
-        password.placeholderColor = hexStringToUIColor(hex: "#76B6D7")
-        password.tintColor = hexStringToUIColor(hex: "#76B6D7")
-        password.selectedTitleColor = hexStringToUIColor(hex: "#76B6D7")
+        password.placeholderColor = hexStringToUIColor(hex: "#1E1F23")
+        password.tintColor = hexStringToUIColor(hex: "#1E1F23")
+        password.selectedTitleColor = hexStringToUIColor(hex: "#1E1F23")
         
         reneterPass.placeholder = "Reneter Password"
-        reneterPass.placeholderColor = hexStringToUIColor(hex: "#76B6D7")
-        reneterPass.tintColor = hexStringToUIColor(hex: "#76B6D7")
-        reneterPass.selectedTitleColor = hexStringToUIColor(hex: "#76B6D7")
+        reneterPass.placeholderColor = hexStringToUIColor(hex: "#1E1F23")
+        reneterPass.tintColor = hexStringToUIColor(hex: "#1E1F23")
+        reneterPass.selectedTitleColor = hexStringToUIColor(hex: "#1E1F23")
         
         //set broder and color for textfields
-        email.backgroundColor = hexStringToUIColor(hex: "#1F384E")
+        email.backgroundColor = hexStringToUIColor(hex: "#292C34")
         email.layer.cornerRadius = 12.0
         email.layer.borderWidth = 1.0
-        email.layer.borderColor = hexStringToUIColor(hex: "#1F384E").cgColor
-        email.textColor = hexStringToUIColor(hex: "#76B6D7")
+        email.layer.borderColor = hexStringToUIColor(hex: "#292C34").cgColor
+        email.textColor = hexStringToUIColor(hex: "#292C34")
         
-        password.backgroundColor = hexStringToUIColor(hex: "#1F384E")
+        password.backgroundColor = hexStringToUIColor(hex: "#292C34")
         password.layer.cornerRadius = 12.0
         password.layer.borderWidth = 2.0
-        password.layer.borderColor = hexStringToUIColor(hex: "#1F384E").cgColor
-        password.textColor = hexStringToUIColor(hex: "#76B6D7")
+        password.layer.borderColor = hexStringToUIColor(hex: "#292C34").cgColor
+        password.textColor = hexStringToUIColor(hex: "#1E1F23")
         
-        reneterPass.backgroundColor = hexStringToUIColor(hex: "#1F384E")
+        reneterPass.backgroundColor = hexStringToUIColor(hex: "#292C34")
         reneterPass.layer.cornerRadius = 12.0
         reneterPass.layer.borderWidth = 2.0
-        reneterPass.layer.borderColor = hexStringToUIColor(hex: "#1F384E").cgColor
-        reneterPass.textColor = hexStringToUIColor(hex: "#76B6D7")
+        reneterPass.layer.borderColor = hexStringToUIColor(hex: "#292C34").cgColor
+        reneterPass.textColor = hexStringToUIColor(hex: "#1E1F23")
         
         //clear button
         email.clearButtonMode = .whileEditing
