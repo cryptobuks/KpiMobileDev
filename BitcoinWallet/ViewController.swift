@@ -115,13 +115,13 @@ class ViewController: UIViewController, UITextFieldDelegate{
         //set placeholder for textfields and set colors
         emailText.placeholder = "    Email"
         emailText.placeholderColor = hexStringToUIColor(hex: "#62656B")
-        emailText.tintColor = hexStringToUIColor(hex: "#1E1F23")
-        emailText.selectedTitleColor = hexStringToUIColor(hex: "#1E1F23")
+        emailText.tintColor = hexStringToUIColor(hex: "#62656B")
+        emailText.selectedTitleColor = hexStringToUIColor(hex: "#62656B")
         
-        passText.placeholder = "     Password"
+        passText.placeholder = "    Password"
         passText.placeholderColor = hexStringToUIColor(hex: "#62656B")
-        passText.tintColor = hexStringToUIColor(hex: "#1E1F23")
-        passText.selectedTitleColor = hexStringToUIColor(hex: "#1E1F23")
+        passText.tintColor = hexStringToUIColor(hex: "#62656B")
+        passText.selectedTitleColor = hexStringToUIColor(hex: "#62656B")
         
         //set broder and color for textfields
         emailText.backgroundColor = hexStringToUIColor(hex: "#1E1F23")

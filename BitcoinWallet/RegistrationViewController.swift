@@ -119,18 +119,18 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         //set placeholder for textfields and set colors
         email.placeholder = "    Email"
         email.placeholderColor = hexStringToUIColor(hex: "#62656B")
-        email.tintColor = hexStringToUIColor(hex: "#1E1F23")
-        email.selectedTitleColor = hexStringToUIColor(hex: "#1E1F23")
+        email.tintColor = hexStringToUIColor(hex: "#62656B")
+        email.selectedTitleColor = hexStringToUIColor(hex: "#62656B")
         
         password.placeholder = "    Password"
         password.placeholderColor = hexStringToUIColor(hex: "#62656B")
-        password.tintColor = hexStringToUIColor(hex: "#1E1F23")
-        password.selectedTitleColor = hexStringToUIColor(hex: "#1E1F23")
+        password.tintColor = hexStringToUIColor(hex: "#62656B")
+        password.selectedTitleColor = hexStringToUIColor(hex: "#62656B")
         
         reneterPass.placeholder = "    Reneter Password"
         reneterPass.placeholderColor = hexStringToUIColor(hex: "#62656B")
-        reneterPass.tintColor = hexStringToUIColor(hex: "#1E1F23")
-        reneterPass.selectedTitleColor = hexStringToUIColor(hex: "#1E1F23")
+        reneterPass.tintColor = hexStringToUIColor(hex: "#62656B")
+        reneterPass.selectedTitleColor = hexStringToUIColor(hex: "#62656B")
         
         //set broder and color for textfields
         email.backgroundColor = hexStringToUIColor(hex: "#1E1F23")
