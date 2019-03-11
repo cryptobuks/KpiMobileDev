@@ -10,17 +10,12 @@ target 'BitcoinWallet' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
-  pod 'paper-onboarding'
-  pod 'QuickTableViewController'
   pod 'QRCodeReader.swift', '~> 10.0.0'
   pod 'SkyFloatingLabelTextField', '~> 3.0'
   pod 'lottie-ios'
-  pod 'Eureka'
-  pod 'SnapKit'
-  pod 'HSBitcoinKit'
   pod 'SwiftyJSON'
   pod 'JWTDecode', '~> 2.2'
-  pod 'DTTextField'
+  pod 'Alamofire', '~> 4.0'
   
   target 'BitcoinWalletTests' do
     inherit! :search_paths

@@ -31,12 +31,12 @@ class ViewController: UIViewController, UITextFieldDelegate{
         
         //check email text
         if((emailText.text?.characters.count)! < 3 || !(emailText.text?.contains("@"))!) {
-            emailText.errorMessage = "Invalid email"
+            emailText.errorMessage = "    Invalid email"
         }
         
         //check password
         if((passText.text?.characters.count)! < 6) {
-            passText.errorMessage = "Invalid password"
+            passText.errorMessage = "    Invalid password"
         }
         
         //Login & Sign Up
@@ -113,13 +113,13 @@ class ViewController: UIViewController, UITextFieldDelegate{
         emailText.clipsToBounds = true
         
         //set placeholder for textfields and set colors
-        emailText.placeholder = "Email"
-        emailText.placeholderColor = hexStringToUIColor(hex: "#D8D8D8")
+        emailText.placeholder = "    Email"
+        emailText.placeholderColor = hexStringToUIColor(hex: "#62656B")
         emailText.tintColor = hexStringToUIColor(hex: "#1E1F23")
         emailText.selectedTitleColor = hexStringToUIColor(hex: "#1E1F23")
         
-        passText.placeholder = "Password"
-        passText.placeholderColor = hexStringToUIColor(hex: "#D8D8D8")
+        passText.placeholder = "     Password"
+        passText.placeholderColor = hexStringToUIColor(hex: "#62656B")
         passText.tintColor = hexStringToUIColor(hex: "#1E1F23")
         passText.selectedTitleColor = hexStringToUIColor(hex: "#1E1F23")
         
@@ -145,6 +145,11 @@ class ViewController: UIViewController, UITextFieldDelegate{
         
         emailText.returnKeyType = UIReturnKeyType.next
         passText.returnKeyType = UIReturnKeyType.go
+        
+        //after pressing return key type go to main page
+        if passText.returnKeyType == UIReturnKeyType.go && Auth.auth().currentUser != nil {
+            self.performSegue(withIdentifier: "goHome", sender: self)
+        }
         
         //set background for button
         actionButton.setTitleColor(hexStringToUIColor(hex: "#68C80C"), for: .normal)

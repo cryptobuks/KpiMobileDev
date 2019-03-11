@@ -8,7 +8,6 @@
 
 import UIKit
 import FirebaseAuth
-import HSBitcoinKit
 import Alamofire
 import SwiftyJSON
 import JWTDecode

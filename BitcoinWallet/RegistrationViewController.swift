@@ -26,16 +26,16 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     @IBAction func goToLogin(_ sender: UIButton) {
         //check email text
         if((email.text?.characters.count)! < 3 || !(email.text?.contains("@"))!) {
-            email.errorMessage = "Invalid email"
+            email.errorMessage = "    Invalid email"
         }
         
         //check password
         if((password.text?.characters.count)! < 6) {
-            password.errorMessage = "Invalid password"
+            password.errorMessage = "    Invalid password"
         }
         
         if((reneterPass.text?.characters.count)! < 6) {
-            reneterPass.errorMessage = "Password does not match"
+            reneterPass.errorMessage = "    Password does not match"
         }
         
         if password.text != reneterPass.text {
@@ -106,43 +106,50 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         password.setPadding()
         reneterPass.setPadding()
         
-        //set masked corner for passText
+        //set masked corner for email and passText
+        email.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner, .layerMinXMinYCorner, .layerMaxXMinYCorner]
+        email.clipsToBounds = true
+        
+        password.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner, .layerMinXMinYCorner, .layerMaxXMinYCorner]
+        password.clipsToBounds = true
+        
         reneterPass.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
+        reneterPass.clipsToBounds = true
         
         //set placeholder for textfields and set colors
-        email.placeholder = "Email"
-        email.placeholderColor = hexStringToUIColor(hex: "#1E1F23")
+        email.placeholder = "    Email"
+        email.placeholderColor = hexStringToUIColor(hex: "#62656B")
         email.tintColor = hexStringToUIColor(hex: "#1E1F23")
         email.selectedTitleColor = hexStringToUIColor(hex: "#1E1F23")
         
-        password.placeholder = "Password"
-        password.placeholderColor = hexStringToUIColor(hex: "#1E1F23")
+        password.placeholder = "    Password"
+        password.placeholderColor = hexStringToUIColor(hex: "#62656B")
         password.tintColor = hexStringToUIColor(hex: "#1E1F23")
         password.selectedTitleColor = hexStringToUIColor(hex: "#1E1F23")
         
-        reneterPass.placeholder = "Reneter Password"
-        reneterPass.placeholderColor = hexStringToUIColor(hex: "#1E1F23")
+        reneterPass.placeholder = "    Reneter Password"
+        reneterPass.placeholderColor = hexStringToUIColor(hex: "#62656B")
         reneterPass.tintColor = hexStringToUIColor(hex: "#1E1F23")
         reneterPass.selectedTitleColor = hexStringToUIColor(hex: "#1E1F23")
         
         //set broder and color for textfields
-        email.backgroundColor = hexStringToUIColor(hex: "#292C34")
+        email.backgroundColor = hexStringToUIColor(hex: "#1E1F23")
         email.layer.cornerRadius = 12.0
         email.layer.borderWidth = 1.0
-        email.layer.borderColor = hexStringToUIColor(hex: "#292C34").cgColor
-        email.textColor = hexStringToUIColor(hex: "#292C34")
+        email.layer.borderColor = hexStringToUIColor(hex: "#1E1F23").cgColor
+        email.textColor = hexStringToUIColor(hex: "#D8D8D8")
         
-        password.backgroundColor = hexStringToUIColor(hex: "#292C34")
+        password.backgroundColor = hexStringToUIColor(hex: "#1E1F23")
         password.layer.cornerRadius = 12.0
         password.layer.borderWidth = 2.0
-        password.layer.borderColor = hexStringToUIColor(hex: "#292C34").cgColor
-        password.textColor = hexStringToUIColor(hex: "#1E1F23")
+        password.layer.borderColor = hexStringToUIColor(hex: "#1E1F23").cgColor
+        password.textColor = hexStringToUIColor(hex: "#D8D8D8")
         
-        reneterPass.backgroundColor = hexStringToUIColor(hex: "#292C34")
+        reneterPass.backgroundColor = hexStringToUIColor(hex: "#1E1F23")
         reneterPass.layer.cornerRadius = 12.0
         reneterPass.layer.borderWidth = 2.0
-        reneterPass.layer.borderColor = hexStringToUIColor(hex: "#292C34").cgColor
-        reneterPass.textColor = hexStringToUIColor(hex: "#1E1F23")
+        reneterPass.layer.borderColor = hexStringToUIColor(hex: "#1E1F23").cgColor
+        reneterPass.textColor = hexStringToUIColor(hex: "#D8D8D8")
         
         //clear button
         email.clearButtonMode = .whileEditing
@@ -159,6 +166,17 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         
         //set background for button
         goButton.setTitleColor(hexStringToUIColor(hex: "#68C80C"), for: .normal)
+        //set corner for button
+        goButton.layer.borderColor = hexStringToUIColor(hex: "#97C961").cgColor
+        goButton.clipsToBounds = true
+        goButton.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMaxXMinYCorner]
+        goButton.layer.cornerRadius = 12.0
+        goButton.layer.borderWidth = 2.0
+    }
+    
+    //rotation
+    override open var shouldAutorotate: Bool {
+        return false
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
