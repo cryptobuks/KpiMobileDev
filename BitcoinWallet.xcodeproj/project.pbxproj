@@ -13,6 +13,8 @@
 		0030F1D12218443D0033A72A /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0030F1D02218443D0033A72A /* SplashScreenViewController.swift */; };
 		006B631E221747040076C838 /* OnlineOfflineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006B631D221747040076C838 /* OnlineOfflineService.swift */; };
 		007006F922172C95008322E4 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007006F822172C95008322E4 /* MainTabBarViewController.swift */; };
+		00C382502236EAD500ED6119 /* SegueFromLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C3824F2236EAD500ED6119 /* SegueFromLeft.swift */; };
+		00C382542236F0B800ED6119 /* SegueFromRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C382532236F0B800ED6119 /* SegueFromRight.swift */; };
 		00CED7DF22257C3E008AC995 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CED7DE22257C3E008AC995 /* RegistrationViewController.swift */; };
 		00CED7E32225B74F008AC995 /* PaddingBottomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CED7E22225B74F008AC995 /* PaddingBottomTextField.swift */; };
 		00F4C03B2215F9C9004EB6FD /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C03A2215F9C9004EB6FD /* QRScannerViewController.swift */; };
@@ -55,6 +57,8 @@
 		0030F1D02218443D0033A72A /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		006B631D221747040076C838 /* OnlineOfflineService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineOfflineService.swift; sourceTree = "<group>"; };
 		007006F822172C95008322E4 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		00C3824F2236EAD500ED6119 /* SegueFromLeft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueFromLeft.swift; sourceTree = "<group>"; };
+		00C382532236F0B800ED6119 /* SegueFromRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueFromRight.swift; sourceTree = "<group>"; };
 		00CED7DE22257C3E008AC995 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		00CED7E22225B74F008AC995 /* PaddingBottomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingBottomTextField.swift; sourceTree = "<group>"; };
 		00F4C03A2215F9C9004EB6FD /* QRScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +156,8 @@
 				0030F1D02218443D0033A72A /* SplashScreenViewController.swift */,
 				00CED7DE22257C3E008AC995 /* RegistrationViewController.swift */,
 				00CED7E22225B74F008AC995 /* PaddingBottomTextField.swift */,
+				00C3824F2236EAD500ED6119 /* SegueFromLeft.swift */,
+				00C382532236F0B800ED6119 /* SegueFromRight.swift */,
 			);
 			path = BitcoinWallet;
 			sourceTree = "<group>";
@@ -452,9 +458,11 @@
 			files = (
 				00CED7E32225B74F008AC995 /* PaddingBottomTextField.swift in Sources */,
 				00F4C03B2215F9C9004EB6FD /* QRScannerViewController.swift in Sources */,
+				00C382542236F0B800ED6119 /* SegueFromRight.swift in Sources */,
 				00FFC15A221301F000D1D6D7 /* ViewController.swift in Sources */,
 				0030F1D12218443D0033A72A /* SplashScreenViewController.swift in Sources */,
 				00CED7DF22257C3E008AC995 /* RegistrationViewController.swift in Sources */,
+				00C382502236EAD500ED6119 /* SegueFromLeft.swift in Sources */,
 				00FFC158221301F000D1D6D7 /* AppDelegate.swift in Sources */,
 				007006F922172C95008322E4 /* MainTabBarViewController.swift in Sources */,
 				006B631E221747040076C838 /* OnlineOfflineService.swift in Sources */,

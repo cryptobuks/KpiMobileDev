@@ -50,26 +50,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zY5-Pm-BOk">
-                                <rect key="frame" x="213" y="409" width="58" height="16"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.59215686270000001" green="0.78823529410000004" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Register">
-                                            <attributes>
-                                                <font key="NSFont" metaFont="system" size="14"/>
-                                                <integer key="NSUnderline" value="1"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j2J-dd-Ja5"/>
-                                    <action selector="goRegisterView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UwM-gW-1OR"/>
-                                    <segue destination="oOh-d1-20H" kind="show" identifier="goRegister" id="Z4V-71-y3t"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ejU-ys-7Fj" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
                                 <rect key="frame" x="45" y="228" width="285" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -108,6 +88,26 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u7X-i0-I26">
+                                <rect key="frame" x="213" y="409" width="58" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.59215686270000001" green="0.78823529410000004" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Sign Up">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="goRegisterView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XmL-o1-NMa"/>
+                                    <segue destination="oOh-d1-20H" kind="custom" identifier="goRegister" customClass="SegueFromLeft" customModule="BitcoinWallet" customModuleProvider="target" id="cGd-5C-dDd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.16078431372549018" green="0.17254901960784313" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -117,8 +117,8 @@
                         <outlet property="cloudLabel" destination="vdK-j0-OQj" id="rFv-yN-uCC"/>
                         <outlet property="emailText" destination="ejU-ys-7Fj" id="BpO-V3-tBW"/>
                         <outlet property="passText" destination="RLL-ZI-qRV" id="f0l-LT-6N0"/>
-                        <outlet property="registerBtn" destination="zY5-Pm-BOk" id="0jD-l3-F2r"/>
-                        <segue destination="C7g-FN-HSK" kind="show" identifier="goHome" id="rGz-UM-9bY"/>
+                        <outlet property="registerBtn" destination="u7X-i0-I26" id="YJ5-gn-Hjd"/>
+                        <segue destination="C7g-FN-HSK" kind="custom" identifier="goHome" customClass="Push" customModule="BitcoinWallet" customModuleProvider="target" id="rGz-UM-9bY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -154,7 +154,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZ9-LY-lYr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZ9-LY-lYr">
                                 <rect key="frame" x="133" y="84" width="108" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -168,7 +168,7 @@
                                 <state key="normal" title="&gt;"/>
                                 <connections>
                                     <action selector="goToLogin:" destination="oOh-d1-20H" eventType="touchUpInside" id="xea-K9-2k9"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="goLoginer" id="DWb-1e-Rmz"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="goLoginer" customClass="SegueFromLeft" customModule="BitcoinWallet" customModuleProvider="target" id="DWb-1e-Rmz"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDE-Q2-zqn">
