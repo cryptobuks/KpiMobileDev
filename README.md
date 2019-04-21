@@ -3,7 +3,7 @@
 ## Project repositories
 [API](https://github.com/kushkamisha/bitcoin-wallet)
 
-[iOS app](https://github.com/ladroid/KpiMobileDev/tree/iOSDev)
+[iOS app](https://github.com/ladroid/KpiMobileDev/tree/iOSDev) <- branch
 
 [Android app](https://github.com/Cyned/BitWallet)
 
