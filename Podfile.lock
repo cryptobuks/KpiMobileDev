@@ -70,6 +70,7 @@ PODS:
   - GTMSessionFetcher/Core (1.2.1)
   - JWTDecode (2.2.0)
   - leveldb-library (1.20)
+  - Loaf (0.4.0)
   - lottie-ios (2.5.2)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
@@ -87,6 +88,7 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Storage
   - JWTDecode (~> 2.2)
+  - Loaf
   - lottie-ios
   - QRCodeReader.swift (~> 10.0.0)
   - SkyFloatingLabelTextField (~> 3.0)
@@ -108,6 +110,7 @@ SPEC REPOS:
     - GTMSessionFetcher
     - JWTDecode
     - leveldb-library
+    - Loaf
     - lottie-ios
     - nanopb
     - QRCodeReader.swift
@@ -129,12 +132,13 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   JWTDecode: 85a405ab16d5473e99bd89ded1d535090ebd6a0e
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  Loaf: 070a55b75527d541e710f69c0c7642ead3676a96
   lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   QRCodeReader.swift: 74d0378eb0c7807828552b49626bbc8307495aee
   SkyFloatingLabelTextField: 38164979b79512f9ff9288ad8acfc4bbf5d843e3
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: ac3afca8c3ffbdc29b519e9522deac2827f61d0f
+PODFILE CHECKSUM: 85fdcbcc2cb4ec59c8d654373d3347b6086bce01
 
 COCOAPODS: 1.6.0

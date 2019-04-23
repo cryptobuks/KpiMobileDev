@@ -16,6 +16,7 @@ target 'BitcoinWallet' do
   pod 'SwiftyJSON'
   pod 'JWTDecode', '~> 2.2'
   pod 'Alamofire', '~> 4.0'
+  pod 'Loaf'
   
   target 'BitcoinWalletTests' do
     inherit! :search_paths

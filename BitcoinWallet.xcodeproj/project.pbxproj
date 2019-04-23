@@ -7,17 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		000D57072213184800258699 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000D57062213184800258699 /* ViewController2.swift */; };
+		000ED77E22576FBC00D710D5 /* BackGroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000ED77D22576FBC00D710D5 /* BackGroundColor.swift */; };
 		00254E872215EE3C003B6B37 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00254E862215EE3C003B6B37 /* SettingsViewController.swift */; };
+		00284652225636580064AC05 /* TansactionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00284651225636580064AC05 /* TansactionListViewController.swift */; };
+		002AAC4322429C9300A8632C /* clearButtonModify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002AAC4222429C9300A8632C /* clearButtonModify.swift */; };
 		0030F1CF221843440033A72A /* 4170-curves-lines.json in Resources */ = {isa = PBXBuildFile; fileRef = 0030F1CE221843440033A72A /* 4170-curves-lines.json */; };
 		0030F1D12218443D0033A72A /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0030F1D02218443D0033A72A /* SplashScreenViewController.swift */; };
-		006B631E221747040076C838 /* OnlineOfflineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006B631D221747040076C838 /* OnlineOfflineService.swift */; };
-		007006F922172C95008322E4 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007006F822172C95008322E4 /* MainTabBarViewController.swift */; };
+		005B599C225CC70F00C31D91 /* DelegateSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005B599B225CC70F00C31D91 /* DelegateSettings.swift */; };
+		005B599E225CE48B00C31D91 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005B599D225CE48B00C31D91 /* SuccessViewController.swift */; };
+		005B59A2225CE68900C31D91 /* 1708-success.json in Resources */ = {isa = PBXBuildFile; fileRef = 005B59A1225CE68900C31D91 /* 1708-success.json */; };
+		005B59A4225D20F400C31D91 /* FailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005B59A3225D20F400C31D91 /* FailViewController.swift */; };
+		005B59A6225D21BA00C31D91 /* 4903-failed.json in Resources */ = {isa = PBXBuildFile; fileRef = 005B59A5225D21BA00C31D91 /* 4903-failed.json */; };
+		0075A7CA22401B0900D3460E /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0075A7C922401B0900D3460E /* MainMenuViewController.swift */; };
+		0090DE95224E720E000089B2 /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090DE94224E720E000089B2 /* SendViewController.swift */; };
+		009B06A0224D2E940068FE5E /* QRCodeGenerateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B069F224D2E940068FE5E /* QRCodeGenerateViewController.swift */; };
+		00A500F22258DA9C007FAE9F /* AlamofireConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A500F12258DA9C007FAE9F /* AlamofireConnection.swift */; };
 		00C382502236EAD500ED6119 /* SegueFromLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C3824F2236EAD500ED6119 /* SegueFromLeft.swift */; };
 		00C382542236F0B800ED6119 /* SegueFromRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C382532236F0B800ED6119 /* SegueFromRight.swift */; };
 		00CED7DF22257C3E008AC995 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CED7DE22257C3E008AC995 /* RegistrationViewController.swift */; };
 		00CED7E32225B74F008AC995 /* PaddingBottomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CED7E22225B74F008AC995 /* PaddingBottomTextField.swift */; };
-		00F4C03B2215F9C9004EB6FD /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C03A2215F9C9004EB6FD /* QRScannerViewController.swift */; };
+		00F4E4062269E4A300EDE18A /* TransactionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F4E4052269E4A300EDE18A /* TransactionDetailViewController.swift */; };
 		00FFC158221301F000D1D6D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FFC157221301F000D1D6D7 /* AppDelegate.swift */; };
 		00FFC15A221301F000D1D6D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FFC159221301F000D1D6D7 /* ViewController.swift */; };
 		00FFC15D221301F000D1D6D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FFC15B221301F000D1D6D7 /* Main.storyboard */; };
@@ -51,17 +60,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		000D57062213184800258699 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		000ED77D22576FBC00D710D5 /* BackGroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackGroundColor.swift; sourceTree = "<group>"; };
 		00254E862215EE3C003B6B37 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		00284651225636580064AC05 /* TansactionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TansactionListViewController.swift; sourceTree = "<group>"; };
+		002AAC4222429C9300A8632C /* clearButtonModify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clearButtonModify.swift; sourceTree = "<group>"; };
 		0030F1CE221843440033A72A /* 4170-curves-lines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "4170-curves-lines.json"; path = "../../../../../NodeJS/MyProgrammingLanguageWebsite/motion/images/untitled folder/Menu/4170-curves-lines.json"; sourceTree = "<group>"; };
 		0030F1D02218443D0033A72A /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
-		006B631D221747040076C838 /* OnlineOfflineService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineOfflineService.swift; sourceTree = "<group>"; };
-		007006F822172C95008322E4 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		005B599B225CC70F00C31D91 /* DelegateSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateSettings.swift; sourceTree = "<group>"; };
+		005B599D225CE48B00C31D91 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		005B59A1225CE68900C31D91 /* 1708-success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "1708-success.json"; path = "../../../../../../Downloads/1708-success.json"; sourceTree = "<group>"; };
+		005B59A3225D20F400C31D91 /* FailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailViewController.swift; sourceTree = "<group>"; };
+		005B59A5225D21BA00C31D91 /* 4903-failed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "4903-failed.json"; path = "../../../../../../Downloads/4903-failed.json"; sourceTree = "<group>"; };
+		0075A7C922401B0900D3460E /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		0090DE94224E720E000089B2 /* SendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
+		009B069F224D2E940068FE5E /* QRCodeGenerateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerateViewController.swift; sourceTree = "<group>"; };
+		00A500F12258DA9C007FAE9F /* AlamofireConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireConnection.swift; sourceTree = "<group>"; };
 		00C3824F2236EAD500ED6119 /* SegueFromLeft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueFromLeft.swift; sourceTree = "<group>"; };
 		00C382532236F0B800ED6119 /* SegueFromRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueFromRight.swift; sourceTree = "<group>"; };
 		00CED7DE22257C3E008AC995 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		00CED7E22225B74F008AC995 /* PaddingBottomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingBottomTextField.swift; sourceTree = "<group>"; };
-		00F4C03A2215F9C9004EB6FD /* QRScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
+		00F4E4052269E4A300EDE18A /* TransactionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailViewController.swift; sourceTree = "<group>"; };
 		00FFC154221301F000D1D6D7 /* BitcoinWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00FFC157221301F000D1D6D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00FFC159221301F000D1D6D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -140,24 +158,33 @@
 		00FFC156221301F000D1D6D7 /* BitcoinWallet */ = {
 			isa = PBXGroup;
 			children = (
+				005B59A5225D21BA00C31D91 /* 4903-failed.json */,
+				005B59A1225CE68900C31D91 /* 1708-success.json */,
+				009B069F224D2E940068FE5E /* QRCodeGenerateViewController.swift */,
 				0030F1CE221843440033A72A /* 4170-curves-lines.json */,
 				00FFC157221301F000D1D6D7 /* AppDelegate.swift */,
 				00FFC159221301F000D1D6D7 /* ViewController.swift */,
-				000D57062213184800258699 /* ViewController2.swift */,
 				00FFC15B221301F000D1D6D7 /* Main.storyboard */,
 				00FFC15E221301F300D1D6D7 /* Assets.xcassets */,
 				00FFC160221301F300D1D6D7 /* LaunchScreen.storyboard */,
 				00FFC1852213029700D1D6D7 /* GoogleService-Info.plist */,
 				00FFC163221301F300D1D6D7 /* Info.plist */,
 				00254E862215EE3C003B6B37 /* SettingsViewController.swift */,
-				00F4C03A2215F9C9004EB6FD /* QRScannerViewController.swift */,
-				007006F822172C95008322E4 /* MainTabBarViewController.swift */,
-				006B631D221747040076C838 /* OnlineOfflineService.swift */,
 				0030F1D02218443D0033A72A /* SplashScreenViewController.swift */,
 				00CED7DE22257C3E008AC995 /* RegistrationViewController.swift */,
 				00CED7E22225B74F008AC995 /* PaddingBottomTextField.swift */,
 				00C3824F2236EAD500ED6119 /* SegueFromLeft.swift */,
 				00C382532236F0B800ED6119 /* SegueFromRight.swift */,
+				0075A7C922401B0900D3460E /* MainMenuViewController.swift */,
+				002AAC4222429C9300A8632C /* clearButtonModify.swift */,
+				0090DE94224E720E000089B2 /* SendViewController.swift */,
+				00284651225636580064AC05 /* TansactionListViewController.swift */,
+				000ED77D22576FBC00D710D5 /* BackGroundColor.swift */,
+				00A500F12258DA9C007FAE9F /* AlamofireConnection.swift */,
+				005B599B225CC70F00C31D91 /* DelegateSettings.swift */,
+				005B599D225CE48B00C31D91 /* SuccessViewController.swift */,
+				005B59A3225D20F400C31D91 /* FailViewController.swift */,
+				00F4E4052269E4A300EDE18A /* TransactionDetailViewController.swift */,
 			);
 			path = BitcoinWallet;
 			sourceTree = "<group>";
@@ -317,6 +344,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				00FFC162221301F300D1D6D7 /* LaunchScreen.storyboard in Resources */,
+				005B59A6225D21BA00C31D91 /* 4903-failed.json in Resources */,
+				005B59A2225CE68900C31D91 /* 1708-success.json in Resources */,
 				00FFC1862213029700D1D6D7 /* GoogleService-Info.plist in Resources */,
 				00FFC15F221301F300D1D6D7 /* Assets.xcassets in Resources */,
 				00FFC15D221301F000D1D6D7 /* Main.storyboard in Resources */,
@@ -400,6 +429,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/JWTDecode/JWTDecode.framework",
+				"${BUILT_PRODUCTS_DIR}/Loaf/Loaf.framework",
 				"${BUILT_PRODUCTS_DIR}/QRCodeReader.swift/QRCodeReader.framework",
 				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -415,6 +445,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWTDecode.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Loaf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCodeReader.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -457,17 +488,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				00CED7E32225B74F008AC995 /* PaddingBottomTextField.swift in Sources */,
-				00F4C03B2215F9C9004EB6FD /* QRScannerViewController.swift in Sources */,
 				00C382542236F0B800ED6119 /* SegueFromRight.swift in Sources */,
 				00FFC15A221301F000D1D6D7 /* ViewController.swift in Sources */,
+				005B599C225CC70F00C31D91 /* DelegateSettings.swift in Sources */,
+				005B59A4225D20F400C31D91 /* FailViewController.swift in Sources */,
+				002AAC4322429C9300A8632C /* clearButtonModify.swift in Sources */,
+				00A500F22258DA9C007FAE9F /* AlamofireConnection.swift in Sources */,
 				0030F1D12218443D0033A72A /* SplashScreenViewController.swift in Sources */,
 				00CED7DF22257C3E008AC995 /* RegistrationViewController.swift in Sources */,
 				00C382502236EAD500ED6119 /* SegueFromLeft.swift in Sources */,
 				00FFC158221301F000D1D6D7 /* AppDelegate.swift in Sources */,
-				007006F922172C95008322E4 /* MainTabBarViewController.swift in Sources */,
-				006B631E221747040076C838 /* OnlineOfflineService.swift in Sources */,
-				000D57072213184800258699 /* ViewController2.swift in Sources */,
+				005B599E225CE48B00C31D91 /* SuccessViewController.swift in Sources */,
+				009B06A0224D2E940068FE5E /* QRCodeGenerateViewController.swift in Sources */,
+				00284652225636580064AC05 /* TansactionListViewController.swift in Sources */,
+				0075A7CA22401B0900D3460E /* MainMenuViewController.swift in Sources */,
+				00F4E4062269E4A300EDE18A /* TransactionDetailViewController.swift in Sources */,
+				0090DE95224E720E000089B2 /* SendViewController.swift in Sources */,
 				00254E872215EE3C003B6B37 /* SettingsViewController.swift in Sources */,
+				000ED77E22576FBC00D710D5 /* BackGroundColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -30,12 +30,20 @@
 	<key>UIApplicationShortcutItems</key>
 	<array>
 		<dict>
+			<key>UIApplicationShortcutItemIcontType</key>
+			<string>UIApplicationShortcutIconTypeShare</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Receive</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>Lado.BitcoinWallet.QRCodeGenerateViewController</string>
+		</dict>
+		<dict>
 			<key>UIApplicationShortcutItemIconType</key>
 			<string>UIApplicationShortcutIconTypeShare</string>
 			<key>UIApplicationShortcutItemTitle</key>
-			<string>Menu 1</string>
+			<string>Send</string>
 			<key>UIApplicationShortcutItemType</key>
-			<string>Lado.CloudStorage.menu</string>
+			<string>Lado.BitcoinWallet.SendViewController</string>
 		</dict>
 	</array>
 	<key>UILaunchStoryboardName</key>
