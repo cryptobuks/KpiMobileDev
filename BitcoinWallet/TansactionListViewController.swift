@@ -57,10 +57,14 @@ class TansactionListViewController:  UIViewController, UITableViewDelegate, UITa
         cell.detailTextLabel?.text = dict["address"] as? String
 
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: 69, height: 30))
-        var frame = label.frame
+        var frame: CGRect = label.frame
         frame.origin.x = 0
         frame.origin.y = 85
         label.frame = frame
+        
+        //maybe this will work|
+        //maybe it helps me   V
+        //label.frame.origin = CGPoint(x: 0, y: 85)
         
         label.font = UIFont.systemFont(ofSize: 12)
         label.textColor = back.hexStringToUIColor(hex: "#97C961")

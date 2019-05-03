@@ -110,7 +110,7 @@ class MainMenuViewController: UIViewController {
             if let onebtcprice = UserDefaults.standard.value(forKey: "onebtcprice") as? String {
                 var res = (balance as! NSString).floatValue * (onebtcprice as! NSString).floatValue
                 print(res)
-                priceLabel.text = "$" + String(res)
+                priceLabel.text = "$" + String(format: "%.2f", res)
             }
         }
         //print(res)
