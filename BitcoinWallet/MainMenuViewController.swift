@@ -139,8 +139,10 @@ class MainMenuViewController: UIViewController {
             FirstNumberBalance.text = res_str
             let (wholePart, fractPart) = modf(res)
             let firstTwoDecimalPlaces = Int(fractPart * 1000)
+            let lastThreeDecimalplaces = String(String(Int(fractPart * 1e6)).prefix(3))
             print("\n\n\n\n\(wholePart)")
-            LastNumberBalance.text = "\(Int(fractPart * 1e6))"
+            print(lastThreeDecimalplaces)
+            LastNumberBalance.text = lastThreeDecimalplaces
         }
     }
     
