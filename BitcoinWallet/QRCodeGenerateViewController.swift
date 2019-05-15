@@ -33,7 +33,7 @@ class QRCodeGenerateViewController: UIViewController, UINavigationControllerDele
         uiViewChange.layer.cornerRadius = 6.0
         uiViewChange.clipsToBounds = true
         
-        lableInfoBTC.text = "bitcoin:" + addr
+        lableInfoBTC.text = "\(addr)"
         
         UIViewQRCodeGen.layer.cornerRadius = 6.0
         UIViewQRCodeGen.clipsToBounds = true
