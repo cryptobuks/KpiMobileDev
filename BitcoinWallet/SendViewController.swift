@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Loaf
 
 class SendViewController: UIViewController {
     var _token: String?
@@ -118,13 +119,15 @@ class SendViewController: UIViewController {
     
     func get_status(_ data: String) {
         if data == "success" {
-            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "success") as! SuccessViewController
-            self.navigationController?.pushViewController(vc, animated: true)
+//            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//            let vc = storyboard.instantiateViewController(withIdentifier: "success") as! SuccessViewController
+//            self.navigationController?.pushViewController(vc, animated: true)
+            Loaf("Successfully sending", state: .success, location: .top, presentingDirection: .right, dismissingDirection: .left, sender: self).show(.short)
         } else {
-            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "fail") as! FailViewController
-            self.navigationController?.pushViewController(vc, animated: true)
+//            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//            let vc = storyboard.instantiateViewController(withIdentifier: "fail") as! FailViewController
+//            self.navigationController?.pushViewController(vc, animated: true)
+            Loaf("Fail sending", state: .error, location: .top, presentingDirection: .right, dismissingDirection: .left, sender: self).show(.short)
         }
     }
     /*

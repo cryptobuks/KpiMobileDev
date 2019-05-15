@@ -56,24 +56,42 @@ class TansactionListViewController:  UIViewController, UITableViewDelegate, UITa
         cell.detailTextLabel?.textColor = back.hexStringToUIColor(hex: "#919499")
         cell.detailTextLabel?.text = dict["address"] as? String
 
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 69, height: 30))
+        let label = UILabel(frame: CGRect(x: 12, y: 0, width: 69, height: 30))
         var frame: CGRect = label.frame
-        frame.origin.x = 0
+        frame.origin.x = 12
         frame.origin.y = 85
         label.frame = frame
         
         //maybe this will work|
         //maybe it helps me   V
-        //label.frame.origin = CGPoint(x: 0, y: 85)
+        label.frame.origin = CGPoint(x: 12, y: 85)
         
         label.font = UIFont.systemFont(ofSize: 12)
-        label.textColor = back.hexStringToUIColor(hex: "#97C961")
+        
+        label.frame = label.frame(forAlignmentRect: CGRect(x: -20, y: 0, width: 69, height: 30))
+        
+        let image_up = UIImage(named: "up")
+        var bgimage_up = UIImageView(image: image_up)
+        bgimage_up.frame = CGRect(x: 70, y: 10, width: 10, height: 10)
+        
+        let image_down = UIImage(named: "down")
+        var bgimage_down = UIImageView(image: image_down)
+        bgimage_down.frame = CGRect(x: 70, y: 10, width: 10, height: 10)
         
         let amount = dict["amount"] as? NSNumber
         let res_str = String(format: "%.3f", (amount?.floatValue)!)
         
         label.text = res_str + " BTC"
-        cell.accessoryView = label
+        let receive = dict["category"] as? NSString
+        if receive == "send" {
+            label.textColor = back.hexStringToUIColor(hex: "#97C961")
+            cell.accessoryView = label
+            cell.accessoryView?.addSubview(bgimage_up)
+        } else {
+            label.textColor = back.hexStringToUIColor(hex: "#D37377")
+            cell.accessoryView = label
+            cell.accessoryView?.addSubview(bgimage_down)
+        }
         return cell
     }
     
