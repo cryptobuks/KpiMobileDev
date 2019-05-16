@@ -159,14 +159,17 @@ class MainMenuViewController: UIViewController {
     }
     
     func updateChange24H(_ data: String) {
-        let res = (data as! NSString).floatValue
-        let res_str = String(format: "%.3f", res)
-        if res_str.contains("-") {
+        let res = (data as! NSString).floatValue * 100
+//        let res_str = String(format: "%.3f", res)
+//        if res_str.contains("-") {
+        if (res < 0) {
+            let res_str = String(format: "%.3f", -res)
             var image: UIImage = UIImage(named: "down")!
             imageUpDown.image = image
             changeBTCrate.textColor = backColor.hexStringToUIColor(hex: "#D37377")
             changeBTCrate.text = res_str + "%"
         } else {
+            let res_str = String(format: "%.3f", res)
             var image: UIImage = UIImage(named: "up")!
             imageUpDown.image = image
             changeBTCrate.textColor = backColor.hexStringToUIColor(hex: "#97C961")
